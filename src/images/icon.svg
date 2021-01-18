@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="840" height="840" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <g class="clock-face" id="clock-face">
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_24" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(5.59008, 0, 0, 4.74247, -1774.56, -601.16)" x="423.667835" xml:space="preserve" y="153.286501">i</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_25" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1, 0, 0, 1, 0, 0) matrix(3.96328, 0, 0, 4.57727, -1089.26, -623.724)" x="459.560217" xml:space="preserve" y="190.559178">ii</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_26" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1, 0, 0, 1, 0, 0) matrix(3.62453, 0, 0, 4.33524, -930.102, -628.155)" x="474.326294" xml:space="preserve" y="244.709051">iii</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_27" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1, 0, 0, 1, 0, 0) matrix(3.62451, 0, 0, 4.68333, -930.102, -773.282)" x="464.842377" xml:space="preserve" y="298.96882">iv</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_28" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1, 0, 0, 1, 0, 0) matrix(4.38511, 0, 0, 5.00502, -1248.28, -926.816)" x="424.137589" xml:space="preserve" y="341.231895">v</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_29" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(3.62453, 0, 0, 4.38491, -930.102, -745.732)" x="372.081478" xml:space="preserve" y="358.542178">vi</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_30" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(3.62453, 0, 0, 4.2358, -930.102, -681.4)" x="316.972663" xml:space="preserve" y="340.09699">vii</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_31" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(3.62453, 0, 0, 4.0369, -930.102, -593.027)" x="281.946362" xml:space="preserve" y="300.099654">viii</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_32" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(3.62453, 0, 0, 4.13635, -930.102, -583.19)" x="267.220368" xml:space="preserve" y="245.718199">ix</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_33" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(4.27351, 0, 0, 4.32712, -1117.86, -577.986)" x="282.924249" xml:space="preserve" y="190.308061">x</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_34" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1, 0, 0, 1, 0, 0) matrix(3.62453, 0, 0, 4.68333, -930.102, -571.273)" x="372.357386" xml:space="preserve" y="140.797109">xii</text>
+   <text fill="#55759c" font-family="serif" font-size="24" font-weight="bold" id="svg_35" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(4.19188, 0, 0, 5.0713, -1117.41, -644.237)" x="323.777721" xml:space="preserve" y="153.362095">xi</text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    /* min-height: 100vh;
+    min-height: 100vh; */
+    margin-left:6rem;
+    /* border:1px solid black; */
+}
+
+.pgtemp-bottom-contr{
+    display:flex;
+    flex-direction: row;
+    min-height: 60vh;
+    background-color: var(--sidenav-bg-primary);
+  
+  }
+  
+  .pgtemp-bttm-bdy-left{
+    width:50%;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   /* position: sticky;
+   top:0; */
+   /* border:1px solid black; */
+   min-height:30vh;
+   width:50%;
+  
+  }
+  .pgetemp-bttm-bdy-right{
+    width:50%;
+  
+  }
+
+@media only screen and (max-width:600px){
+    .container{
+       
+        margin-left:0;
+     
+    }
+
+}

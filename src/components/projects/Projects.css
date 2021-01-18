@@ -1,0 +1,22 @@
+
+
+
+.project-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* border:2px solid #55759c; */
+    border-radius: 8px;
+    /* background-color: #55759c; */
+    width:60%;
+    min-height:50vh;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding:0.6em;
+    color:#55759c;
+}
+.project-info p{
+    color:#55759c;
+  }

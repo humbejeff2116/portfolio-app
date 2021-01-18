@@ -1,0 +1,48 @@
+
+
+
+ 
+
+.pic-mod-intro-hire{
+    height:7vh;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #008751;
+    color:#00b625;
+    color:#ffffff;
+    font-size:0.9em;
+    /* font-weight:bold; */
+    background-color: var(--sidenav-bg-primary);
+    transition:all 0.3s ease;
+    
+}
+.pic-mod-intro-hire:hover{
+    cursor:pointer;
+    text-decoration: underline;
+ 
+    
+}
+
+
+
+
+
+
+@media  only screen and (max-width:600px){
+    .pic-mod-contnr{
+      
+        margin-left:0;
+       
+    }
+
+    
+    
+}
+
+@media  only screen and (min-width:600px){
+   
+    
+    
+}
+

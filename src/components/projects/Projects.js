@@ -33,8 +33,8 @@ export default function ProjectComp(props) {
 
         <PagesTemplate 
         top={ <PictureComp leftPane={ <ProjectsHeader/> } rightPane={ <RightPane/> } /> }
-        leftPane={< ProjectsBodyLeft />}
-        rightPane={<ProjectsBodyRight/>} 
+        bottomLeftPane={< ProjectsBodyLeft />}
+        bottomRightPane={<ProjectsBodyRight/>} 
         />
 
     )
@@ -63,20 +63,9 @@ function ProjectsBodyLeft(){
     return(
         <div className="project-info">
             <h2>My Projects</h2>
-        <p> knowing fully well the community i find my self in and the global reputation that might come with it, 
-            when i started out on this journey my biggest challenge wasnt about learning to write algorithms or program it was accepting the challenges 
-            that comes with who i am and where am from.
-            on my journey here i have been so many things i thought i shouldnt be but only now do i realize they were all part of the process and i am glad i didnt cheat it
-             .
-             i could tell you about my programming cababilities and how much i love what i do or what i have achieved and would like to achieve in the tech world but that story
-             is bettter told with what i have achomplisehed which is how much impact i have made in the software develoment community rather than the man whose life revolves around this system.
-            
-             </p>
-             {/* <p>
-            
-              i love  paying attention to details and 
-             </p> */}
-
+            {/* <img src={} alt="project picture"width="100%" height="50%" /> */}
+           
+         
         </div>
     )
 }

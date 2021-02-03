@@ -52,7 +52,7 @@ export function SkillsComp(props){
        <h3>{props.title}</h3>
 
     </div>
-    {/* row */}
+  
     <div className="skills-mod-ls">
       {
       props.list.map((item,i)=>
@@ -70,7 +70,7 @@ export function SkillsComp(props){
     return(
         <div className="skills-mod-ittm">
           
-       <p><i>{props.icon}</i><span className={props.spanClass}> {props.item}</span></p>
+       <p><i>{props.icon }</i><span className={props.spanClass}> {props.item }</span></p>
     </div>
 
     )

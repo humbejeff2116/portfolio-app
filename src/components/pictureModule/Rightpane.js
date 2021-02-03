@@ -12,8 +12,7 @@ import React from 'react';
 import AnimClock from '../animClock/Animclock'
 import SocialBar from '../socialbar/SocialBar';
 import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';
-// const SocialBar = React.lazy(() => import('../socialbar/SocialBar'));
-// const AnimClock = React.lazy(() => import('../animClock/Animclock'));
+
 
 
 export default function RightPane(){
@@ -34,8 +33,10 @@ export default function RightPane(){
        
 
         <RightPaneComp
-         topComponent={            
-            <AnimClock/>          
+         topComponent={  
+                  
+            <AnimClock/>
+              
         }
          bottomComponent={                          
             <SocialBar links={socialLinks} />

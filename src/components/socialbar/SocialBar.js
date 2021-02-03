@@ -40,7 +40,7 @@ export default function SocialbarComp(props){
 
                 )
         }
-</nav>
+        </nav>
     )
 
 }

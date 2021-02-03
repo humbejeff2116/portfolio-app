@@ -10,7 +10,7 @@
 
 import React,{useEffect} from 'react';
 import Template from '../../components/template/Template';
-import  AboutComp from '../../components/about/About'
+import  AboutComp from '../../components/about/About';
 
 
 

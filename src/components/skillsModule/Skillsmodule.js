@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import './Skillsmodule.css';
 
@@ -27,8 +18,6 @@ export function SkillsTemplate(props){
         
     )
 }
-
-
 
 
 export function SkillsComp(props){

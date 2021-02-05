@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { BsArrowRight} from "react-icons/bs";
@@ -15,12 +6,26 @@ import jeffweb1  from '../../images/jeffweb1.jpg';
 
 
 export default function LeftPane(props){
+    const [imageLoaded, setImageLoaded] = React.useState(false);
     return(
         <>
        
-        <div className="pic1-mod-intro">
+        <div 
+        className={`pic1-mod-intro image-${imageLoaded ? 'visible' :  'hidden'}` }  
+        onLoad={ ()=> setImageLoaded(true) } >
+        <div className="smooth-image-wrapper">
+        <img
+          src={jeffweb1}
+          alt="about-me"
+          width="100%"
+          height="100%"
+          className={`smooth-image image-${imageLoaded ? 'visible' :  'hidden'}`}
+         
+        />
+      
+      </div>
            
-            <img src={ jeffweb1 } width="100%" height="45%" alt="about-me"  />
+           
 
            
            <h1>Hi, I am Humbe Jeffrey </h1> 
@@ -41,7 +46,6 @@ export default function LeftPane(props){
 
         </div>
         
-        {/* <div className="pic-mod-arrow">  <p><i><BsArrowRight className="arrow-down"/></i> </p></div> */}
         </>
 
     )

@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
-
 
 export default  function LeftPaneComp(props){
     return(

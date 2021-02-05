@@ -1,24 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import Skeleton,{SkeletonTheme} from "react-loading-skeleton";
 import Template, {PagesTemplate} from '../template/Template';
 import PageLoader from '../Loader/loader'
-import Clock from '../animClock/Animclock';
 import PictureComp from '../pictureModule/Picturemodule';
 import { SkillsTemplate} from '../skillsModule/Skillsmodule';
-import  SkillsModule from '../skillsModule/index';
 import Socialbar from '../socialbar/SocialBar';
 import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';
+
 const socialLinks = [
     {name:"Li",href:"linkedin.com/jeffrey123",icon:< FaLinkedinIn/>},
     {name:"Gi",href:"linkedin.com/jeffrey123",icon:< FaGithubSquare/>},
@@ -75,10 +63,7 @@ function SkillsLeftPane(props){
 
 
 <div  className="skills-mod">
-    {/* <div  className="skills-mod-ttle">
-    <h3><Skeleton height={30} /></h3>
-
-    </div> */}
+   
     <div className="skills-mod-ls">
     <PageLoader/>
 
@@ -118,9 +103,14 @@ function IndexPictureLeftPane(){
         <SkeletonTheme color="#55759c" highlightColor="#8fb1da">
        
         <div className="pic-mod-intro">
-            <h2>
-                <Skeleton height={30} width={`95%`} count={2} />
-            </h2>
+            <div className="picture">
+            <Skeleton height={250} width={`95%`} />
+
+            </div>
+            <h1>
+                <Skeleton height={30} width={`95%`} />
+
+            </h1>
 
            <p>
             <Skeleton height={10}  width={`95%`} count={4} />
@@ -128,11 +118,7 @@ function IndexPictureLeftPane(){
             <Skeleton height={50} width={`80%`} />
              
         </div>
-        <div className="arrow">  
-            <i>
-            <Skeleton height={15} width={5} />
-            </i>
-        </div>
+        
         </SkeletonTheme>
         </>
 
@@ -146,7 +132,7 @@ function IndexPictureRightPane(){
         <PageLoader/>
         </section>
         </div>
-            {/* <Clock /> */}
+          
            
         </div>
         
@@ -182,16 +168,19 @@ function AboutHeader( ){
     return(
 
         <>
-     <div className="pic-mod-intro">
-        <h1><Skeleton/></h1> 
-        <p>
-        <Skeleton height={10}  width={`95%`} count={4} />
-        </p>
-     </div>
-     <div className="arrow"> 
-        <i>
-            <Skeleton height={15} width={5} />
-        </i>
+        
+        <div className="about-intro">
+
+         <div  className="picture">
+         <Skeleton height={250} width={`100%`}/>
+         </div>
+        <div className="about-bio">
+            <span className="about-tg" > <Skeleton height={10} width={`90%`}/> </span><br />
+            <span  className="about-tg" > <Skeleton  height={10} width={`90%`}/> </span><br />
+            <span className="about-tg" > <Skeleton  height={10} width={`90%`}/> </span><br />
+            <span  className="about-tg" > <Skeleton  height={10} width={`90%`}/> </span> 
+        </div>
+ 
      </div>
      </>
 
@@ -264,4 +253,29 @@ function ProjectsBodyRight(props){
         <>
         </>
     )
+}
+
+// contact skeleton start here
+
+export function ContactSkeleton(props){
+    return(
+        <SkeletonTheme color="#55759c" highlightColor="#8fb1da">
+        <Template>
+        <PagesTemplate 
+        top={ <PictureComp leftPane={ <ContactHeader/> } rightPane={ <IndexPictureRightPane/> } /> }
+        />
+
+        </Template>
+        </SkeletonTheme>
+
+    )
+}
+
+function ContactHeader(){
+    return(
+        <div className="contact-skel-intro">
+            <PageLoader/> 
+        </div>
+    )
+
 }

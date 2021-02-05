@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border:2px solid #55759c;
+  /* border:2px solid #55759c; */
   border-radius: 8px;
   width:60%;
   min-height:50vh;
@@ -102,6 +102,76 @@ body {
   flex-direction:row;
   justify-content: flex-end;
 }
+
+.about-intro{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  /* border:1px solid #55759c; */
+  /* border-radius: 8px; */
+  width:60%;
+  min-height:50vh;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  /* padding:0.6em; */
+}
+.about-bio{
+   
+  margin-top:3%;
+  padding:0.4em;
+  border-radius: 4px;
+
+}
+/* styles for  images */
+.smooth-image {
+  transition: opacity 3s;
+}
+.image-visible {
+  opacity: 1;
+}
+.image-hidden {
+  opacity: 0;
+}
+
+
+.pic-mod-clock{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  width:30%;
+  min-height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+   position: fixed;
+   align-self: center;
+   /* border:2px solid #55759c;    */
+}
+.cloc {
+  display:flex;
+  align-self: center;   
+    height:30vh;
+    width: 50%;
+      /* border:1px solid #55759c; */
+  }
+
+  .contact-skel-intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:1px solid #55759c;
+    /* border-radius: 8px; */
+    width:60%;
+    min-height:50vh;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    /* padding:0.6em; */
+  }
 
 @keyframes bounce {
   0% {
@@ -369,8 +439,8 @@ opacity: 1;
 
 
 .nav-icon{
-  width: 1.8em;
-  height:1.8em;
+  width: 1.6em;
+  height:1.6em;
 }
 
 code {

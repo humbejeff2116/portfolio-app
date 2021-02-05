@@ -1,22 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import { BsArrowRight} from "react-icons/bs";
 import  PictureComp from '../pictureModule/Picturemodule';
@@ -62,10 +43,7 @@ function ProjectsHeader(props){
 function ProjectsBodyLeft(){
     return(
         <div className="project-info">
-            <h2>My Projects</h2>
-            {/* <img src={} alt="project picture"width="100%" height="50%" /> */}
-           
-         
+            <h2>My Projects</h2> 
         </div>
     )
 }

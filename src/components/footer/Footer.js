@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';

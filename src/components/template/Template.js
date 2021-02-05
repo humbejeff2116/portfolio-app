@@ -34,6 +34,13 @@ export default function Template(props){
 }
 
 export function PagesTemplate(props){
+    if(!props.bottomLeftPane && !props.bottomRightPane){
+        return(
+            <>
+            {props.top} 
+            </>         
+        )
+    }
   return(
       <>
       {props.top}

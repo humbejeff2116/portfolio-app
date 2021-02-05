@@ -1,20 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React,{useEffect} from 'react';
 import Template from '../../components/template/Template';
 import ProjectComp from '../../components/projects/Projects';
-
 
 
 

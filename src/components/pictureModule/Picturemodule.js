@@ -1,27 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
-
-
-
-
 
 
 export default function PictureComp({leftPane,rightPane}){

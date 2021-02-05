@@ -1,20 +1,14 @@
-
-
-
-
-
-
-
-
-
 import React,{Suspense} from 'react';
 import { Route,Switch } from 'react-router-dom';
 import './App.css';
-import IndexSkeleton from '../components/skeleton/AppSkeleton';
-import  {AboutSkeleton,ProjectsSkeleton} from '../components/skeleton/AppSkeleton';
+import IndexSkeleton,{AboutSkeleton,ProjectsSkeleton,ContactSkeleton} from '../components/skeleton/AppSkeleton';
+// import  {AboutSkeleton,ProjectsSkeleton,ContactSkeleton} from '../components/skeleton/AppSkeleton';
+import NotFoundPage from '../pages/404Page/404';
 const IndexPage = React.lazy(() => import('../pages/IndexPage/IndexPage'));
 const AboutPage = React.lazy(() => import('../pages/AboutPage/AboutPage'));
 const Projectspage = React.lazy(() => import('../pages/ProjectsPage/ProjectsPage'));
+const ContactPage = React.lazy(()=> import('../pages/ContactPage/ContactPage'));
+// const NotFoundPage = React.lazy(()=> import('../pages/404Page/404') )
 
 
 
@@ -44,10 +38,16 @@ export default function App() {
             <Projectspage/>
             </Suspense>
         </Route>
-        
-        {/* <Route path="*">
-        <Woops404 />
-        </Route>  */}
+
+        <Route exact  path="/contact" >
+        <Suspense fallback={ <ContactSkeleton/> }>
+            < ContactPage />
+            </Suspense>
+        </Route>
+       
+        <Route path="*">
+        <NotFoundPage />
+        </Route> 
 
       </Switch> 
 

@@ -1,22 +1,12 @@
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import  PictureComp from '../pictureModule/Picturemodule';
-// import {SkillsTemplate} from '../skillsModule/Skillsmodule';
 import { BsArrowRight} from "react-icons/bs";
-
 import {PagesTemplate} from '../template/Template'
-
 import RightPane from '../pictureModule/Rightpane';
 import jeffweb2  from '../../images/jeffweb1.jpg';
 import './About.css';
+
+
 
 
 
@@ -74,26 +64,36 @@ function AboutBodyLeft(props){
 }
 
 function AboutHeader(props){
+    const [imageLoaded, setImageLoaded] = React.useState(false);
 
     return(
 
         <>
      <div className="about-intro">
-     <img src={ jeffweb2 } width="100%" height="100%" alt="about-me"  />
-        {/* <h1>Please call me Jeff </h1> */}
-        <div className="about-bio">
+
+     <div className="smooth-image-wrapper">
+        <img
+          src={jeffweb2}
+          alt="about-me"
+          width="100%"
+          height="100%"
+          className={`smooth-image image-${imageLoaded ? 'visible' :  'hidden'}`}
+          onLoad={ ()=> setImageLoaded(true) }
+        />
+      </div>
+    
+        <div className={`about-bio image-${imageLoaded ? 'visible' :  'hidden'} `}>
+
             <span className="about-tg" >Name : </span> <span className="about-ts" > Humbe Jeffrey </span><br />
             <span  className="about-tg" >Nationality : </span > <span className="about-ts" > &#127475;&#127468; Nigeria </span><br />
             <span className="about-tg" >Programming Languages : </span> <span className="about-ts" > JavaScript & Java </span><br />
             <span  className="about-tg" >Specialization : </span> <span className="about-ts" > Web and mobile software dev </span> 
         </div>
  
-        {/* <p>I am a, mordern, self taught web and mobile application software developer, from &#127475;&#127468; Nigeria, whose 
-            priorities in software development include scalability, high performance and security.
-        </p> */}
      </div>
      <div className="arrow">  <p><i><BsArrowRight className="arrow-down"/></i> </p></div>
      </>
 
     )
 }
+

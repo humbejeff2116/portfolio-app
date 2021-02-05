@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import AnimClock from '../animClock/Animclock'
 import SocialBar from '../socialbar/SocialBar';

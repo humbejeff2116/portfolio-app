@@ -14,7 +14,6 @@ export default function SideNav(props){
             <div className="side-nav-open">
                 <Link to='#' className="side-nav-open-link" >
                     <i><BsArrowRight className="nav-icon"/></i> 
-                    {/* <span className="sidenav-link-text">{props.name}dssssss</span> */}
                 </Link>
             </div>
 

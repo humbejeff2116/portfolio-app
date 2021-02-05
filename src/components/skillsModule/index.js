@@ -38,7 +38,9 @@ let skills = [
         title:"Other Tools",
         list:[
             {item:"Git",icon:< FaGitSquare className="git"/>,spanClass:"git-spn"},
-            {item:"WebPack",icon:<SiWebpack className="webpack"/>,spanClass:"webpack-spn"}
+            {item:"WebPack",icon:<SiWebpack className="webpack"/>,spanClass:"webpack-spn"},
+            {item:"NPM",icon:< DiNpm className="git"/>,spanClass:"git-spn"},
+            {item:"Yarn",icon:< FaYarn className="git"/>,spanClass:"git-spn"},
         ]
     }
 ]

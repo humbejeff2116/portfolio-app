@@ -1,4 +1,4 @@
-.project-info{
+.project-mod-intro{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -7,12 +7,10 @@
     border-radius: 8px;
     width:90%;
     min-height:50vh;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
     padding:0.6em;
-    color:var(--prim-border-color);
-}
-.project-info p{
     color:var(--prim-border-color);
   }

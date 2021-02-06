@@ -1,8 +1,6 @@
 import React,{useEffect} from 'react';
 import ContactComp from '../../components/contact/Contact';
 import Template from '../../components/template/Template';
-import {BiPhone} from "react-icons/bi";
-import {FiMail} from "react-icons/fi";
 import{FaPhoneSquareAlt} from "react-icons/fa";
 import{RiMailSendFill} from "react-icons/ri";
 import './ContactPage.css';

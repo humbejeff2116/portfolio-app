@@ -43,8 +43,8 @@ function NavLinks(props){
 
         <div className="side-nav-item" >
 
-       <Link to={props.href} className="side-nav-link" >
-       <i>{props.icon}</i> <span className="sidenav-link-text">{props.name}</span>
+        <Link to={props.href} className="side-nav-link" >
+            <i>{props.icon}</i> <span className="sidenav-link-text">{props.name}</span>
         </Link> 
 
         </div>

@@ -86,7 +86,8 @@
    }
 .footer-social{         
     display:flex;
-    justify-content: center;    
+    justify-content: center;
+   
 }
 .footer-legal{  
     flex-direction:column;

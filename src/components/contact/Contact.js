@@ -2,6 +2,7 @@ import React from 'react';
 import  PictureComp from '../pictureModule/Picturemodule';
 import {PagesTemplate} from '../template/Template'
 import RightPane from '../pictureModule/Rightpane';
+
 import './contact.css';
 
 
@@ -32,11 +33,15 @@ function ContactHeader(props){
          <div>
              <h2>Contact Me</h2>
          </div>
+         <div className="contact-ls" >
          {
              props.contactItems.map((contact,i)=>
              <ContactCard {...contact} key={i} />
              )
          }
+
+         </div>
+        
 
      </div>
      
@@ -47,9 +52,15 @@ function ContactHeader(props){
 function ContactCard(props){
     return(
            
-             <div className={`about-bio  `}>
-            <span className="about-tg" >{props.contactType} </span> 
-            <span className="about-ts" >{props.contactItem}  </span><br />
+             <div className={`contact-bio `}>
+
+                 
+           <p className="about-tg">
+               <i> {props.contactIcon} </i>
+               <span>{ props.contactType +" :"}  </span>    
+               <span className="contact-item"> {props.contactItem } </span>  
+            </p> 
+           
             </div>
             
     )

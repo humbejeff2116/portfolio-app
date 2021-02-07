@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , NavLink} from 'react-router-dom';
 import { BsArrowRight} from "react-icons/bs";
 import './Sidenav.css';
 
@@ -43,9 +43,13 @@ function NavLinks(props){
 
         <div className="side-nav-item" >
 
-        <Link to={props.href} className="side-nav-link" >
+        <NavLink
+        exact 
+        to={props.href} 
+        activeClassName="sidenav-link-active"
+        className="side-nav-link" >
             <i>{props.icon}</i> <span className="sidenav-link-text">{props.name}</span>
-        </Link> 
+        </NavLink> 
 
         </div>
 

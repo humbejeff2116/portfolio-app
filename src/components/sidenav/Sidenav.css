@@ -60,8 +60,13 @@
 
 .side-nav-item{ 
     transition:all 0.3s ease;
-    text-align: center;      
+    text-align: center;    
 }
+.side-nav-item > .sidenav-link-active{
+    background-color:#283649;
+
+}
+
 
 .side-nav-link{   
     display:flex;

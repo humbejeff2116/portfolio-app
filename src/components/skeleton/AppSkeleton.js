@@ -212,8 +212,7 @@ export function ProjectsSkeleton(){
         <Template>
         <PagesTemplate 
         top={ <PictureComp leftPane={ <ProjectsHeader/> } rightPane={ <IndexPictureRightPane/> } /> }
-        bottomLeftPane={< ProjectsBodyLeft />}
-        bottomRightPane={<ProjectsBodyRight/>} 
+        
         />
 
         </Template>
@@ -226,7 +225,7 @@ export function ProjectsSkeleton(){
 function ProjectsHeader(props){
 
     return(
-        <>
+       
         <div className="pic-mod-intro">
         <h1> <Skeleton width={`95%`}/> </h1> 
         <p> <Skeleton height={10}  width={`95%`} count={4} /> </p>
@@ -234,26 +233,12 @@ function ProjectsHeader(props){
                 <p> <Skeleton height={10}  width={`95%`}  /></p>
             </div>
      </div>
-     <div className="arrow">  <i>  <Skeleton height={15} width={5} /></i></div>
-     </>
+
+    
 
     )
 }
-function ProjectsBodyLeft(){
-    return(
-        <div className="project-info">
-            <PageLoader/>
-           
-         
-        </div>
-    )
-}
-function ProjectsBodyRight(props){
-    return(
-        <>
-        </>
-    )
-}
+
 
 // contact skeleton start here
 

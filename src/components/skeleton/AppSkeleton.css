@@ -1,0 +1,33 @@
+.contact-skel-intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:2px solid #55759c;
+    border-radius: 8px;
+    width:60%;
+    min-height:50vh;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    /* padding:0.6em; */
+  }
+
+
+  .proj-mod-skel-intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:2px solid #55759c;
+    border-radius: 8px;
+    width:80%;
+    min-height:50vh;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding:0.6em;
+    color:var(--prim-border-color);
+  }

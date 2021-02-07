@@ -6,6 +6,7 @@ import PictureComp from '../pictureModule/Picturemodule';
 import { SkillsTemplate} from '../skillsModule/Skillsmodule';
 import Socialbar from '../socialbar/SocialBar';
 import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';
+import './AppSkeleton.css'
 
 const socialLinks = [
     {name:"Li",href:"linkedin.com/jeffrey123",icon:< FaLinkedinIn/>},
@@ -226,7 +227,7 @@ function ProjectsHeader(props){
 
     return(
        
-        <div className="pic-mod-intro">
+        <div className="proj-mod-skel-intro">
         <h1> <Skeleton width={`95%`}/> </h1> 
         <p> <Skeleton height={10}  width={`95%`} count={4} /> </p>
             <div>

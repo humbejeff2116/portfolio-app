@@ -39,8 +39,10 @@ let skills = [
         list:[
             {item:"Git",icon:< FaGitSquare className="git"/>,spanClass:"git-spn"},
             {item:"WebPack",icon:<SiWebpack className="webpack"/>,spanClass:"webpack-spn"},
-            {item:"NPM",icon:< DiNpm className="git"/>,spanClass:"git-spn"},
-            {item:"Yarn",icon:< FaYarn className="git"/>,spanClass:"git-spn"},
+            {item:"Yarn",icon:< FaYarn className="yarn"/>,spanClass:"yarn-spn"},
+            {item:"npm",icon:< DiNpm className="npm"/>,spanClass:"npm-spn"},
+            {item:"Babel",icon:< SiBabel className="babel"/>,spanClass:"babel-spn"},
+            {item:"maven",icon:<SiApachemaven className="maven"/>,spanClass:"maven-spn"},
         ]
     }
 ]

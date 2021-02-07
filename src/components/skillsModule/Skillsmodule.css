@@ -92,6 +92,44 @@
 .git-spn{
     color:#ffffff;
 }
+.npm{
+  color:#cb3837;
+  width: 1.5em;
+  height:1.5em;
+}
+.npm-spn{
+  color:#ffffff;
+
+}
+.yarn{
+  color:#2b8ab5;
+    width: 1.5em;
+  height:1.5em;
+}
+.yarn-spn{
+  color:#2b8ab5;
+
+}
+.babel{
+  color:#c8c77c;
+  width: 1.5em;
+  height:1.5em;
+
+}
+.babel-spn{
+  color:#c8c77c;
+
+}
+.maven{
+  color:#9f004a;
+  width: 1.5em;
+  height:1.5em;
+
+}
+.maven-spn{
+  color:#d54d25;
+
+}
 
 .skills-mod-ittm i{   
     padding :0.1rem;      

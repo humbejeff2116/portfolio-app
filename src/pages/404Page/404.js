@@ -3,6 +3,7 @@ import Template from '../../components/template/Template';
 import  PictureComp from '../../components/pictureModule/Picturemodule';
 import {PagesTemplate} from '../../components/template/Template'
 import RightPane from '../../components/pictureModule/Rightpane';
+import {Helmet} from "react-helmet";
 import './404.css';
 
 
@@ -15,6 +16,12 @@ export default function NotFoundPage(props){
     return(
         
         <Template>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Not found</title>
+                <meta name="description" content="Nnot found page" />
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
            
            <PagesTemplate 
                 top={ 

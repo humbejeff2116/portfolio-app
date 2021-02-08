@@ -3,6 +3,7 @@ import ContactComp from '../../components/contact/Contact';
 import Template from '../../components/template/Template';
 import{FaPhoneSquareAlt} from "react-icons/fa";
 import{RiMailSendFill} from "react-icons/ri";
+import {Helmet} from "react-helmet";
 import './ContactPage.css';
 
 const contactItems =[
@@ -22,6 +23,11 @@ export default function ContactPage(props){
      
     return(
         <Template>
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact me</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <ContactComp contactItems = {contactItems} />
         </Template>
 

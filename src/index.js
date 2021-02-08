@@ -8,11 +8,11 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router basename="/portfolio-app" >
       <App/>
-    </Router>
-  </React.StrictMode>,
+    </Router>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

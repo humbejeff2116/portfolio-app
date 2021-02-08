@@ -82,17 +82,102 @@
     animation: rotate 60s infinite linear;
   } */
 
+
+/* desktop media queries */
+
+@media only screen and (max-width:2560px) and (max-height: 1440px){
+  
+  .clock{
+   
+    height:28vh;
+    
+  }
  
+}
+
+
+
+@media only screen and (max-width:1680px) and (max-height: 1050px){
+  
+  .clock{
+   
+    height:25vh;
+    
+  }
+
+}
+
+@media only screen and (max-width:1600px) and (max-height: 900px){
+  .clock{
+   
+    height:28vh;
+    
+  }
+  
+  
+}
+@media only screen and (max-width:1440px) and (max-height: 900px){
+  
+  .clock{
+    height:28vh;
+    
+  }
+ 
+}
+
+
+
+@media only screen and (max-width:1280px) and (max-height: 800px){
+  
+  .clock{
+   
+    height:25vh;
+    
+  }
+ 
+}
+@media only screen and (max-width:1280px) and (max-height: 720px){
+
+  .clock{
+   
+    height:28vh;
+    
+  }
+ 
+}
+
+
+
+
+/* mobile */
   @media only screen and (max-width:600px){
     .pic-mod-clock{
       display:none;      
        border:2px solid #55759c;      
   }
 
-
     .clock{
        display:none;
     }
    
+}
+@media only screen and (max-width:414px) and (max-height: 896px){
+  
+
+}
+@media only screen and (max-width:414px) and (max-height: 736px){
+  
+
+}
+@media only screen and (max-width:375px) and (max-height: 667px){
+  
+
+}
+@media only screen and (max-width:360px) and (max-height: 640px){
+  
+
+}
+@media only screen and (max-width:375px) and (max-height: 667px){
+  
 
 }

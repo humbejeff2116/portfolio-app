@@ -1,7 +1,8 @@
 import React from 'react';
 import Skeleton,{SkeletonTheme} from "react-loading-skeleton";
 import Template, {PagesTemplate} from '../template/Template';
-import PageLoader from '../Loader/loader'
+import PageLoader from '../Loader/loader';
+import PageLoader2 from '../Loader/loader2';
 import PictureComp from '../pictureModule/Picturemodule';
 import { SkillsTemplate} from '../skillsModule/Skillsmodule';
 import Socialbar from '../socialbar/SocialBar';
@@ -104,6 +105,7 @@ function IndexPictureLeftPane(){
         <SkeletonTheme color="#55759c" highlightColor="#8fb1da">
        
         <div className="pic-mod-intro">
+        {/* <PageLoader/> */}
             <div className="picture">
             <Skeleton height={250} width={`95%`} />
 
@@ -114,7 +116,7 @@ function IndexPictureLeftPane(){
             </h1>
 
            <p>
-            <Skeleton height={10}  width={`95%`} count={4} />
+            <Skeleton height={10}  width={`95%`} count={6} />
            </p>            
             <Skeleton height={50} width={`80%`} />
              
@@ -228,11 +230,7 @@ function ProjectsHeader(props){
     return(
        
         <div className="proj-mod-skel-intro">
-        <h1> <Skeleton width={`95%`}/> </h1> 
-        <p> <Skeleton height={10}  width={`95%`} count={4} /> </p>
-            <div>
-                <p> <Skeleton height={10}  width={`95%`}  /></p>
-            </div>
+        <PageLoader/>
      </div>
 
     

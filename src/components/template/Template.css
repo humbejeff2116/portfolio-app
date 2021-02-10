@@ -1,5 +1,7 @@
 .container{ 
     margin-left:6rem;
+    min-height:80vh;
+    background-color: var(--sidenav-bg-primary);
 }
 
 .pgtemp-bottom-contr{
@@ -21,8 +23,15 @@
    
   
   } */
+  .pge-top-contr{
+    min-height:100vh;
+  }
 
 @media only screen and (max-width:600px){
+  .pge-top-contr{
+    min-height:80vh;
+    background-color: var(--sidenav-bg-primary);
+  }
     .container{ 
         margin-left:0;
         margin-top:3.0rem;    

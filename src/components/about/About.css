@@ -1,20 +1,5 @@
 
 /** styles.css */
-.about-intro{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    /* text-align: center; */
-    /* border:1px solid #55759c; */
-    /* border-radius: 8px; */
-    width:60%;
-    min-height:50vh;
-    margin-top: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: center;
-    /* padding:0.6em; */
-  }
 
 .about-info{
     /* border:1px solid black; */
@@ -41,17 +26,13 @@
 @media only screen and (max-width:600px){
   .about-info{
     margin-bottom:2%;
-   
-}
-
-}
-.about-bio{
-   
-    margin-top:3%;
-    padding:0.4em;
     border-radius: 4px;
+    
+   
+}
 
 }
+
 
 .about-tss{
     color:#008751;

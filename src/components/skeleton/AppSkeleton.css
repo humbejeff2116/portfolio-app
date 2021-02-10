@@ -31,3 +31,19 @@
     padding:0.6em;
     color:var(--prim-border-color);
   }
+
+  @media only screen and (max-width:600px){
+    .contact-skel-intro{
+     
+      width:80%;
+      margin-top: 30%;
+  
+    }
+    .proj-mod-skel-intro{
+      margin-top: 25%;
+     
+    }
+  
+    
+    
+  }

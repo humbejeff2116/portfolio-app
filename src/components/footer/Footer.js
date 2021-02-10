@@ -14,9 +14,7 @@ const socialLinks = [
 export default function Footer(props){
     return(
         <div className="footer">
-            <div className="footer-social">
-              < FooterSocialbarComp links={socialLinks}/>
-            </div>
+           
 
             <div className="footer-legal"> 
 
@@ -29,6 +27,10 @@ export default function Footer(props){
                 </div>  
 
            </div>
+
+           <div className="footer-social">
+              < FooterSocialbarComp links={socialLinks}/>
+            </div>
 
         </div>
        

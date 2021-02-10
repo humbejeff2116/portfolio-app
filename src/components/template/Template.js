@@ -36,9 +36,9 @@ export default function Template(props){
 export function PagesTemplate(props){
     if(!props.bottomLeftPane && !props.bottomRightPane){
         return(
-            <>
+            <div  className="pge-top-contr">
             {props.top} 
-            </>         
+            </div>         
         )
     }
   return(

@@ -52,34 +52,21 @@ body {
  width:50%;
  /* border:2px solid #55759c; */
 }
-
+/* used for app skeletononly */
 .pic-mod-intro{
   display:flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* border:2px solid #55759c; */
+
   border-radius: 8px;
   width:60%;
   min-height:50vh;
-  margin-top: 15%;
+  margin-top: 7%;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
   padding:0.6em;
-}
-
-.pic-mod-intro h1{
-  color:#00b625;
-  color:#55759c;
-  color:var(--prim-border-color);
-}
-
-.pic-mod-intro p{  
-  color:#ffffff;
-  color:#00b625;
-  color:#55759c;
-  color:var(--prim-border-color);
 }
 
 .pic-mod-right{
@@ -103,28 +90,7 @@ body {
   justify-content: flex-end;
 }
 
-.about-intro{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  /* text-align: center; */
-  /* border:1px solid #55759c; */
-  /* border-radius: 8px; */
-  width:60%;
-  min-height:50vh;
-  margin-top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  /* padding:0.6em; */
-}
-.about-bio{
-   
-  margin-top:3%;
-  padding:0.4em;
-  border-radius: 4px;
 
-}
 /* styles for  images */
 .smooth-image {
   transition: opacity 3s;
@@ -449,6 +415,28 @@ code {
   padding:0.6em;
   color:var(--prim-border-color);
 }
+.about-intro{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  /* border:1px solid #55759c; */
+  /* border-radius: 8px; */
+  width:60%;
+  /* min-height:50vh; */
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  /* padding:0.6em; */
+}
+.about-bio{
+   
+  margin-top:3%;
+  padding:0.4em;
+  border-radius: 4px;
+
+}
 
 .about-info{ 
   display:flex;
@@ -469,7 +457,8 @@ code {
 
 @media only screen and (max-width:600px){
   .pic-mod-contnr{     
-    margin-left:0;  
+    margin-left:0; 
+    min-height:40vh; 
   }
 
   .pic-mod-right{
@@ -481,19 +470,26 @@ code {
   }
 
   .pic-mod-intro{
-  width:80%;
-  border: none;
+  
   }
 
   .arrow{
-    justify-content: flex-start;
+   display:none;
    
   }
+}
+@media only screen and (max-width:414px) and (max-height: 896px){
+  .pic-mod-contnr{     
+    margin-left:0; 
+    min-height: 50vh; 
+  }
+  
+
 }
 
 @media only screen and (max-width:287px){
 
-  .arrow i{
+  .arrow {
     display:none;  
   }
 }

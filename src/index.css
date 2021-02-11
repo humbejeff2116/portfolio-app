@@ -9,10 +9,6 @@
   color:#8fb1da; 
 }
 
-.skeleton-skill{
-  width: 1.5em;
-  height:1.5em;
-}
 
 body {
   margin: 0;
@@ -52,22 +48,6 @@ body {
  width:50%;
  /* border:2px solid #55759c; */
 }
-/* used for app skeletononly */
-.pic-mod-intro{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-
-  border-radius: 8px;
-  width:60%;
-  min-height:50vh;
-  margin-top: 7%;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  padding:0.6em;
-}
 
 .pic-mod-right{
   display:flex;
@@ -90,7 +70,6 @@ body {
   justify-content: flex-end;
 }
 
-
 /* styles for  images */
 .smooth-image {
   transition: opacity 3s;
@@ -103,25 +82,7 @@ body {
 }
 
 
-.pic-mod-clock{
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  width:30%;
-  min-height: 25vh;
-  margin-left: auto;
-  margin-right: auto;
-   position: fixed;
-   align-self: center;
-   /* border:2px solid #55759c;    */
-}
-.cloc {
-  display:flex;
-  align-self: center;   
-    height:30vh;
-    width: 50%;
-      /* border:1px solid #55759c; */
-  }
+
 
  
 
@@ -355,7 +316,6 @@ opacity: 1;
 
 /* W3, Opera 12+, Firefox 16+ */
 
-
 .arrow{
   /* border:2px solid #55759c; */
   min-height: 20vh;
@@ -400,60 +360,9 @@ code {
     monospace;
 }
 
-.project-info{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border:2px solid #55759c;
-  border-radius: 8px;
-  width:90%;
-  min-height:50vh;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  padding:0.6em;
-  color:var(--prim-border-color);
-}
-.about-intro{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  /* text-align: center; */
-  /* border:1px solid #55759c; */
-  /* border-radius: 8px; */
-  width:60%;
-  /* min-height:50vh; */
-  margin-top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  /* padding:0.6em; */
-}
-.about-bio{
-   
-  margin-top:3%;
-  padding:0.4em;
-  border-radius: 4px;
 
-}
 
-.about-info{ 
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border:2px solid #55759c;
-  border-radius: 8px;
-  width:90%;
-  min-height:50vh;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  padding:0.6em;
-  color:#55759c;
-  color: var(--prim-border-color);
-}
+
 
 @media only screen and (max-width:600px){
   .pic-mod-contnr{     
@@ -469,9 +378,9 @@ code {
     width:100%;
   }
 
-  .pic-mod-intro{
+  /* .pic-mod-intro{
   
-  }
+  } */
 
   .arrow{
    display:none;

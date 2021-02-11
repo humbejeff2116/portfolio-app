@@ -11,7 +11,7 @@ export default function LeftPane(props){
         <>
        
         <div 
-        className={`pic1-mod-intro image-${imageLoaded ? 'visible' :  'hidden'}` }  
+        className={`pic-mod-intro image-${imageLoaded ? 'visible' :  'hidden'}` }  
         onLoad={ ()=> setImageLoaded(true) } >
         <div className="smooth-image-wrapper">
         <img

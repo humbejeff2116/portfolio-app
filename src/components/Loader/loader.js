@@ -9,4 +9,12 @@ export default function PageLoader(){
     )
 
 }
+export function SkeletonLoader(){
+    return(
+        <div className="skel-loader-container" >
+        <div className="skel-loader"></div>
+        </div>
+
+    )
+}
 

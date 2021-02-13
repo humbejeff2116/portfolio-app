@@ -1,8 +1,7 @@
 import React from 'react';
 import  PictureComp from '../pictureModule/Picturemodule';
-import {PagesTemplate} from '../template/Template'
+import {PagesTemplate} from '../template/Template';
 import RightPane from '../pictureModule/Rightpane';
-
 import './contact.css';
 
 
@@ -24,11 +23,9 @@ export default function ContactComp(props) {
 
 
 function ContactHeader(props){
-   
-   
+     
     return(
-
-       
+      
      <div className="contact-intro" >
          <div>
              <h2>Contact Me</h2>
@@ -42,7 +39,6 @@ function ContactHeader(props){
 
          </div>
         
-
      </div>
      
 
@@ -53,7 +49,6 @@ function ContactCard(props){
     return(
            
              <div className={`contact-bio `}>
-
                  
            <p className="about-tg">
                <i> {props.contactIcon} </i>

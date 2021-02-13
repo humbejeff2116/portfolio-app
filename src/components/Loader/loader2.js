@@ -1,12 +1,5 @@
-
-
-
 import React from 'react';
 import './loader.css';
-
-
-
-
 
 
 export default function PageLoader2(props){

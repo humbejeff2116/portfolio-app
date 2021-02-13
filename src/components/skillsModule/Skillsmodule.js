@@ -64,16 +64,6 @@ export function SkillsComp(props){
 
     )
 }
-
-
-
-
-
-
-
-
-
-
 /* <div className="skills-mod-panel" >
 
 <div  className="skills-mod-prog-lang">

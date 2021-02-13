@@ -3,21 +3,21 @@ import  PictureComp from '../pictureModule/Picturemodule';
 import { BsArrowRight} from "react-icons/bs";
 import {PagesTemplate} from '../template/Template'
 import RightPane from '../pictureModule/Rightpane';
-import jeffweb2  from '../../images/jeffweb1.jpg';
 import './About.css';
-
-
+import ApplicationData from '../../Data/data'
 
 
 
 
 export default function AboutComp(props) {
+    const aboutInfoData = ApplicationData.getAboutData().aboutInfo;
+    const aboutBioData = ApplicationData.getAboutData().aboutBio;
 
     return(
     
         <PagesTemplate 
-        top={ <PictureComp leftPane={ <AboutHeader/> } rightPane={ <RightPane/> } /> }
-        bottomLeftPane={<AboutBodyLeft />}
+        top={ <PictureComp leftPane={ <AboutHeader aboutInfo={aboutBioData} /> } rightPane={ <RightPane/> } /> }
+        bottomLeftPane={<AboutBodyLeft aboutInfoData={aboutInfoData} />}
         bottomRightPane={<AboutBodyRight/>} 
         />
        
@@ -34,66 +34,88 @@ function AboutBodyRight(props){
 function AboutBodyLeft(props){
 
     return(
+        props.aboutInfoData.map((data,i)=>
+        <AboutBodyCard key={i} {...data}/>
+        )
 
-        <div className="about-info">
-
-            <h2>About Me</h2>
-
-        <p> 
-            Knowing fully well the community I find my self in and the global reputation that might come with it, 
-            when I started out on this journey my biggest challenge wasn't about learning to write algorithms,
-            program or build things it was accepting the challenges that comes with who I am and where am from.
-            On my journey here I have been so many things like being a poet, to being an artist, and at some point to also beign an Electrical/Electronics technician(love this role till now),
-            but only now do I realize they were all part of the proccess to bringing me here and I am glad I didnt cheat it.
-        </p>
-
-        <p>
-             I could go on to tell you about my programming capabilities, how I taught myself how to program and develop things or how much I love using JavaScript, 
-             Java and their related libraries and frameworks in building scalable, high performing and secured applications,
-             but I think that story is bettter told with what I have achomplised, which for me is how much I have positively impacted the software development community,
-             rather than the man whose life revolves around his computer system. 
-             I hardly see myself being a special developer in any way, as I believe anyone could do the same things I do, if only they are ready to sacrifice their time,
-             stay focused, work hard, and continiously learn like I do.
-      
-        </p>
-
-        </div>
-
+       
     )
 
 }
 
+
+function AboutBodyCard(props){
+    return(
+        <div className="about-info">
+
+            <h2>{props.heading}</h2>
+           {
+           props.body.map((para,i)=>
+           <AboutPara key={i} {...para}/>
+
+           )
+           }
+
+        </div>       
+
+    )
+}
+function AboutPara(props){
+    return(
+        <p>
+            {props.para}
+        </p>
+    )
+}
+
 function AboutHeader(props){
     const [imageLoaded, setImageLoaded] = React.useState(false);
-
+   
     return(
-
         <>
-     <div className="about-intro">
-
-     <div className="smooth-image-wrapper">
-        <img
-          src={jeffweb2}
-          alt="about-me"
-          width="100%"
-          height="100%"
-          className={`smooth-image image-${imageLoaded ? 'visible' :  'hidden'}`}
-          onLoad={ ()=> setImageLoaded(true) }
-        />
-      </div>
-    
-        <div className={`about-bio image-${imageLoaded ? 'visible' :  'hidden'} `}>
-
-            <span className="about-tg" >Name : </span> <span className="about-ts" > Humbe Jeffrey </span><br />
-            <span  className="about-tg" >Nationality : </span > <span className="about-ts" > &#127475;&#127468; Nigeria </span><br />
-            <span className="about-tg" >Programming Languages : </span> <span className="about-ts" > JavaScript & Java </span><br />
-            <span  className="about-tg" >Specialization : </span> <span className="about-ts" > Web and mobile software dev </span> 
-        </div>
- 
-     </div>
+        {
+            props.aboutInfo.map((data,i)=>
+            <AboutHeaderCard key={i} {...data} imageLoaded={imageLoaded} setImageLoaded={setImageLoaded} />
+            )
+        }
      <div className="arrow">  <p><i><BsArrowRight className="arrow-down"/></i> </p></div>
      </>
 
     )
 }
 
+function AboutHeaderCard(props){
+    return(
+        <div className="about-intro">
+
+        <div className="smooth-image-wrapper">
+           <img
+             src={props.imageSrc}
+             alt="about-me"
+             width="100%"
+             height="100%"
+             className={`smooth-image image-${props.imageLoaded ? 'visible' :  'hidden'}`}
+             onLoad={ ()=> props.setImageLoaded(true) }
+           />
+         </div>
+         <div className={`about-bio image-${props.imageLoaded ? 'visible' :  'hidden'}`}>
+         {
+             
+             props.aboutBio.map((bio,i)=>
+             <AboutBioCard key={i} {...bio} imageLoaded={props.imageLoaded} />
+             )
+         }
+          </div>
+    
+        </div>
+        
+    )
+}
+
+function AboutBioCard(props){
+    return(
+        <>
+        <span className="about-tg" >{props.item} : </span> <span className="about-ts" >{props.content}</span><br />
+        </>
+    )
+}

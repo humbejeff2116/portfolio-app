@@ -1,17 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';
+import ApplicationData from '../../Data/data';
 import './Footer.css';
 
 
-
-const socialLinks = [
-    {name:"Li",href:"linkedin.com/jeffrey123",icon:< FaLinkedinIn className="footer-nav-icon" />},
-    {name:"Gi",href:"linkedin.com/jeffrey123",icon:< FaGithubSquare className="footer-nav-icon"/>},
-    {name:"Fa",href:"linkedin.com/jeffrey123",icon:< FaFacebookSquare className="footer-nav-icon" />},
-    {name:"Tw",href:"linkedin.com/jeffrey123",icon:< FaTwitter className="footer-nav-icon" />}
-]
 export default function Footer(props){
+    let links = ApplicationData.getFooterSocialLinks();
+   
     return(
         <div className="footer">
            
@@ -29,7 +24,7 @@ export default function Footer(props){
            </div>
 
            <div className="footer-social">
-              < FooterSocialbarComp links={socialLinks}/>
+              < FooterSocialbarComp links={links}/>
             </div>
 
         </div>

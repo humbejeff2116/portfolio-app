@@ -1,8 +1,7 @@
 import React,{useEffect} from 'react';
 import Template from '../../components/template/Template';
-import PictureModule from '../../components/pictureModule/index';
-import SkillsModule from '../../components/skillsModule/index';
 import {Helmet} from "react-helmet";
+import IndexComp from '../../components/index/Index';
 
 
 
@@ -19,9 +18,7 @@ export default function IndexPage(props){
                 <title>Humbe Jeffreys' portfolio</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <PictureModule />
-           
-            <SkillsModule />
+            <IndexComp />        
         </Template>
 
     )

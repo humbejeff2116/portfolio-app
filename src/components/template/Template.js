@@ -2,27 +2,16 @@ import React from 'react';
 import SideNav from '../sidenav/Sidenav';
 import Footer from '../footer/Footer';
 import  './Template.css';
-// side nav icons 
-import {BiHome,BiUser,BiFolder} from "react-icons/bi";
-import {RiBookOpenLine,RiContactsBookLine} from "react-icons/ri";
+import ApplicationData from '../../Data/data';
 
-
-
-let links =[
- 
-    {name:"Home",href:"/",icon:<BiHome className="nav-icon" />},
-    {name:"About",href:"/about-me",icon:<BiUser className="nav-icon"/>},
-    {name:"Projects",href:"/projects",icon:<BiFolder className="nav-icon"/>},
-    {name:"Contact",href:"/contact",icon:<RiContactsBookLine className="nav-icon"/>},
-    {name:"Blog",href:"/blog",icon:<RiBookOpenLine className="nav-icon"/>}
-  ]
 
 export default function Template(props){
+    const sideNavLinks = ApplicationData.getSideNavLinks()
 
     return(
         <>
 
-      <SideNav links={links} />
+      <SideNav links={sideNavLinks} />
       <div className="container">
           {props.children}
       </div>
@@ -34,6 +23,7 @@ export default function Template(props){
 }
 
 export function PagesTemplate(props){
+
     if(!props.bottomLeftPane && !props.bottomRightPane){
         return(
             <div  className="pge-top-contr">
@@ -41,7 +31,9 @@ export function PagesTemplate(props){
             </div>         
         )
     }
+
   return(
+      
       <>
       {props.top}
       <div className="pgtemp-bottom-contr">
@@ -54,6 +46,6 @@ export function PagesTemplate(props){
           </div>
       </div>
       </>
-      
+    
   )
 }

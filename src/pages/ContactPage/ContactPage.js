@@ -1,21 +1,13 @@
 import React,{useEffect} from 'react';
 import ContactComp from '../../components/contact/Contact';
 import Template from '../../components/template/Template';
-import{FaPhoneSquareAlt} from "react-icons/fa";
-import{RiMailSendFill} from "react-icons/ri";
+import ApplicationData from '../../Data/data';
 import {Helmet} from "react-helmet";
 import './ContactPage.css';
 
-const contactItems =[
-    {contactType:"Telephone 1", contactIcon:<FaPhoneSquareAlt className="contact-icon" />, contactItem:"+2348134308049"},
-    {contactType:"Telephone 2",contactIcon:<FaPhoneSquareAlt className="contact-icon" />, contactItem:"+2348134308049"},
-    {contactType:"Email",contactIcon:<RiMailSendFill className="contact-icon" />, contactItem:"humbejeff2116@gmail.com"}
-]
-
-
-
 
 export default function ContactPage(props){
+    const contactItems = ApplicationData.getContactItems();
 
     useEffect(()=>{
         window.scrollTo(0,0)       

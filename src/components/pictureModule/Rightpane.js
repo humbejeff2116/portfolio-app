@@ -1,26 +1,15 @@
 import React from 'react';
 import AnimClock from '../animClock/Animclock'
 import SocialBar from '../socialbar/SocialBar';
-import { FaTwitter,FaFacebookSquare,FaLinkedinIn,FaGithubSquare} from 'react-icons/fa';
+import ApplicationData from '../../Data/data';
 
 
 
 export default function RightPane(){
 
-  
-     
-   
-        const socialLinks = [
-            {name:"Li",href:"linkedin.com/jeffrey123",icon:< FaLinkedinIn/>},
-            {name:"Gi",href:"linkedin.com/jeffrey123",icon:< FaGithubSquare/>},
-            {name:"Fa",href:"linkedin.com/jeffrey123",icon:< FaFacebookSquare />},
-            {name:"Tw",href:"linkedin.com/jeffrey123",icon:< FaTwitter/>}
-        ]
-    
-       
-
+    const socialLinks = ApplicationData.getMainSocialLinks()
+      
     return(
-       
 
         <RightPaneComp
          topComponent={  
@@ -33,7 +22,6 @@ export default function RightPane(){
         } />
     )
 }
-
 
 
 function RightPaneComp({topComponent,bottomComponent}){

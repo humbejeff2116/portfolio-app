@@ -1,8 +1,9 @@
 import React,{useEffect} from 'react';
 import Template from '../../components/template/Template';
 import  PictureComp from '../../components/pictureModule/Picturemodule';
-import {PagesTemplate} from '../../components/template/Template'
-import RightPane from '../../components/pictureModule/Rightpane';
+import {PagesTemplate} from '../../components/template/Template';
+import { motion } from "framer-motion";
+import framerMotionSettings from '../../components/FramerMotion/FramerSettings';
 import {Helmet} from "react-helmet";
 import './404.css';
 
@@ -23,12 +24,7 @@ export default function NotFoundPage(props){
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
            
-           <PagesTemplate 
-                top={ 
-                <PictureComp 
-                leftPane={ <NotFoundComp  /> } 
-                rightPane={ <RightPane/> } /> }
-        />
+           <PagesTemplate  top={ <PictureComp leftPane={ <NotFoundComp  /> } /> } />
         </Template>
     )
 
@@ -37,7 +33,13 @@ export default function NotFoundPage(props){
 
 function NotFoundComp(props){
     return(
-        <div className="not-found-intro">
+        <motion.div
+        initial="initial"  
+        animate="in" exit="out"  
+        variants={framerMotionSettings.pageVariants} 
+        transition={framerMotionSettings.pageTransitions} 
+         className="not-found-intro"
+         >
             <div>
             <h2>
            oopss!! seems resource not found at that address
@@ -47,9 +49,9 @@ function NotFoundComp(props){
             </div>
            
             <p>
-                The link you entered is either broken, removed or does not exist
+                The link you entered or followed is either broken, removed or does not exist
             </p>
             
-        </div>
+        </motion.div>
     )
 }

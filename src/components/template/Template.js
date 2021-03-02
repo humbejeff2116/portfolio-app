@@ -3,17 +3,26 @@ import SideNav from '../sidenav/Sidenav';
 import Footer from '../footer/Footer';
 import  './Template.css';
 import ApplicationData from '../../Data/data';
+import SocialBar from '../socialbar/SocialBar';
 
 
 export default function Template(props){
     const sideNavLinks = ApplicationData.getSideNavLinks()
+    const socialLinks = ApplicationData.getMainSocialLinks()
 
     return(
         <>
 
       <SideNav links={sideNavLinks} />
       <div className="container">
+          <div className="children-container" >
           {props.children}
+
+          </div>
+         
+          <div className="social-nav" >
+          <SocialBar links={socialLinks}/>
+          </div>
       </div>
         <Footer />
 
@@ -31,6 +40,7 @@ export function PagesTemplate(props){
             </div>         
         )
     }
+   
 
   return(
       
@@ -48,4 +58,18 @@ export function PagesTemplate(props){
       </>
     
   )
+}
+export function IndexPageTemplate(props){
+   
+        return(
+            <>
+                {props.top}
+            <div className="pgtemp-only-bottom-contr">               
+                {props.bottom}               
+            </div>
+            </>
+
+        )
+    
+
 }

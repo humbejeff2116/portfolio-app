@@ -1,6 +1,7 @@
 :root{
   --sidenav-bg-primary: #233143;
   --prim-color:#79a2d4;
+  --sec-color:#55759c;
   --prim-border-color:#79a2d4;
   --sec-border-color:#55759c;
   color:#8fb1da;
@@ -20,6 +21,7 @@ body {
   overflow-y: scroll;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
+  background-color: var(--sidenav-bg-primary);
 }
 ::-webkit-scrollbar{
   width:0.25rem;
@@ -55,6 +57,16 @@ body {
   min-height:30vh;
   width:50%;
 }
+.pic-mod-no-right{
+  display:flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  min-height:30vh;
+  width:100%;
+  /* border:2px solid #55759c; */
+ }
+ 
+
 
 .pic-mod-right-top{
   height:50%;
@@ -80,6 +92,7 @@ body {
 .image-hidden {
   opacity: 0;
 }
+
 
 
 

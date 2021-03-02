@@ -2,6 +2,18 @@ import React from 'react';
 
 
 export default function PictureComp({leftPane,rightPane}){
+    if(!rightPane){
+        return(
+            
+    <div className="pic-mod-contnr">
+         <div className="pic-mod-no-right">
+             {leftPane}
+         </div>
+        
+    </div>
+
+        )
+    }
   
     return(
 
@@ -17,4 +29,3 @@ export default function PictureComp({leftPane,rightPane}){
     )
 
 }
-

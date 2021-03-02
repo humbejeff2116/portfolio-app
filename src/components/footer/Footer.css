@@ -3,9 +3,10 @@
      flex-direction: column;
     justify-content: center;
     min-height: 20vh;
-    margin-left:6rem;
+    margin-left:5.75rem;
     /* border:1px solid black;  */
-    background-color: var(--sidenav-bg-primary);    
+    background-color: var(--sidenav-bg-primary);
+        
 }
 
 .footer-legal{
@@ -19,6 +20,7 @@
     margin-right:auto;
     margin-left:auto; 
     color: rgb(218, 152, 218);
+   
 }
 
 .footer-legal-list {
@@ -44,7 +46,7 @@
     display:flex;
     flex-direction:row;
     position: fixed;
-    bottom:1%;
+    bottom:0%;
     align-self: center;
     justify-content: center;
     margin-top:2%;
@@ -83,8 +85,8 @@
 .footer{  
 
     margin-left:0;
-   
-    border-top:1px solid #55759c;     
+    border-top:1px solid #55759c; 
+    background-color: #1d2c3f;    
    }
 .footer-social{         
     display:flex;
@@ -99,7 +101,6 @@
 }
 .footer-legal-list {   
     justify-content: center;
-     /* border:1px solid black;  */
      width: 100%;      
 }
         

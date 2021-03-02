@@ -7,7 +7,7 @@ import ApplicationData from '../../Data/data';
 
 
 
-function SkillsLeftPane(props){
+export default function SkillsLeftPane(props){
     const skills = ApplicationData.getSkills();
     return(
         <LeftPaneComp >
@@ -16,7 +16,7 @@ function SkillsLeftPane(props){
     )
 }
 
-export default function SkillsModule(){
+export function SkillsModule(){
     return(
        <SkillsTemplate leftPane = {<SkillsLeftPane />} rightPane = { <SkillsRightPane /> } />
     )

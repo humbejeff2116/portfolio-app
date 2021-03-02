@@ -44,10 +44,9 @@ const data = {
         {
            
             imageSrc : jeffweb1,
-            heading : "Hi, I am Humbe Jeffrey",
-            body : `I am a, mordern, self taught web and mobile application software developer, from ${unicode} 
-                    Nigeria, who is opportuned to have great hands on experience using React.js, Node.js and 
-                    Spring Boot in developing scalable, high performing and secured applications` 
+            heading : "Hi, I am Humbe Jeffrey, a software developer",
+            body : `I am a, mordern, web and mobile application software developer, from ${unicode} 
+                    Nigeria. Highly experienced in building scalable, high performing and secured applications` 
         }
     ],
 
@@ -70,23 +69,27 @@ const data = {
                 body : [
                     {
                         para : `Knowing fully well the community I find my self in and the global reputation that 
-                                might come with it, when I started out on this journey my biggest challenge wasn't 
-                                about learning to write algorithms, program or build things it was accepting the 
-                                challenges that comes with who I am and where am from. On my journey here I have 
-                                been so many things like being a poet, to being an artist, and at some point to also 
-                                beign an Electrical/Electronics technician(love this role till now), but only now do 
-                                I realize they were all part of the proccess to bringing me here and I am glad I didnt 
-                                cheat it.`
+                                might come with it, when I started out on this journey ( software development ), my
+                                biggest challenge wasn't about learning to write algorithms, program or build things,
+                                it was accepting the challenges that comes with who I am, and where am from. On my 
+                                journey here I have been a poet, an artist, and an Electrical/Electronics technologist, 
+                                but only at some point did I realize they were all part of the proccess to making me 
+                                the software developer that I am, and I'm glad I didnt cheat it.` 
+                                
+                                
+                                
+                                 
+                                
                     },
                     {
                         para : `I could go on to tell you about my programming capabilities, how I taught myself how 
-                                to program and develop things or how much I love using JavaScript, Java and their 
+                                to write codes, and build things, or how much I love using JavaScript, Java and their 
                                 related libraries and frameworks in building scalable, high performing and secured 
-                                applications,but I think that story is bettter told with what I have achomplised, 
+                                applications,but I think that story is bettter told with what I have accomplished, 
                                 which for me is how much I have positively impacted the software development community, 
                                 rather than the man whose life revolves around his computer system. I hardly see myself 
                                 being a special developer in any way, as I believe anyone could do the same things I do, 
-                                if only they are ready to sacrifice their time,stay focused, work hard, and continiously 
+                                if only they sacrifice part of their time, stay focused, work hard, and continiously 
                                 learn like I do.`
                     }
                 ]
@@ -111,10 +114,10 @@ const data = {
     ],
 
     mainsocialLinks : [
-        { name:"Li", href:"linkedin.com/jeffrey123", icon:< FaLinkedinIn/> },
-        { name:"Gi", href:"linkedin.com/jeffrey123", icon:< FaGithubSquare/> },
-        { name:"Fa", href:"linkedin.com/jeffrey123", icon:< FaFacebookSquare /> },
-        { name:"Tw", href:"linkedin.com/jeffrey123", icon:< FaTwitter/> }
+        { name:"Li",title:"Linkedin", href:"linkedin.com/jeffrey123", icon:< FaLinkedinIn/> },
+        { name:"Gi",title:"Github", href:"linkedin.com/jeffrey123", icon:< FaGithubSquare/> },
+        { name:"Fa",title:"Facebook", href:"linkedin.com/jeffrey123", icon:< FaFacebookSquare /> },
+        { name:"Tw",title:"Twitter", href:"linkedin.com/jeffrey123", icon:< FaTwitter/> }
     ],
 
     skills : [
@@ -158,6 +161,40 @@ const data = {
         { contactType:"Telephone 1", contactIcon:<FaPhoneSquareAlt className="contact-icon" />, contactItem:"+2348134308049" },
         { contactType:"Telephone 2", contactIcon:<FaPhoneSquareAlt className="contact-icon" />, contactItem:"+2348077026676" },
         { contactType:"Email", contactIcon:<RiMailSendFill className="contact-icon" />, contactItem:"humbejeff2116@gmail.com" }
+    ],
+    projectsData:[
+        {
+            imageSrc:jeffweb1,
+           
+            projDetails : [
+                { item:"Application Name", content :"Quick buy" },
+                { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js, ( MERN )` },
+                { item:"Description", content:" A web based e-commerce clothing store application with secured user payment gateways " },
+                { item:" Github", content:" A web based e-commerce clothing store " },
+               
+            ]
+    
+        },
+        {
+            imageSrc:jeffweb1,
+            projDetails : [
+                { item:"Application Name", content :"Hospital Mangement System " },
+                { item:"Application Stack", content :`MongoDb, Express, Node.js, ` },
+                { item:"Description", content:" A Hospital Management System backend Application Programming Interface ( API )" },
+               
+            ]
+    
+        },
+        {
+            imageSrc:jeffweb1,
+            projDetails : [
+                { item:"Application Name", content :"Jeff's Portfolio" },
+                { item:"Application Stack", content :` React.js` },
+                { item:"Description", content:" My personal portfolio web application" },
+               
+            ]
+    
+        }
     ]
 }
 
@@ -183,6 +220,9 @@ ApplicationData.prototype.getIndexInfo= function(){
 }
 ApplicationData.prototype.getAboutData= function(){
     return this.data.aboutData;
+}
+ApplicationData.prototype.getProjectsData= function(){
+    return this.data.projectsData;
 }
 
 export default new ApplicationData();

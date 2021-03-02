@@ -147,6 +147,8 @@
     background-color: var(--sidenav-bg-primary);
      display:flex;
     flex-direction:row;
+     margin-left:6rem;
+     /* border:1px solid black; */
   }
 
   .skills-temp-left{
@@ -181,7 +183,11 @@
     flex-direction: column;
     border:2px solid #55759c;
     min-height:20vh;
-    margin:1%;
+    width:60%;
+    margin-bottom: 1%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #1d2c3f;
   }
 
   .skills-mod-ttle{
@@ -208,6 +214,12 @@
   }
 
 @media  only screen and (max-width:600px){
+  .skills-mod{
+    
+    width:90%;
+    margin-bottom: 5%;
+   
+  }
     .skills-mod-ittm p{ 
         color:var( --prim-color);      
         flex-direction: column;   

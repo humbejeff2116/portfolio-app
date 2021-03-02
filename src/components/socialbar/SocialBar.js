@@ -9,7 +9,7 @@ import './SocialBar.css';
 function SocailLinks(props){
     return(
         <div className="pic-mod-nav-item">
-          <Link to={props.href}>  <i>{props.icon}</i></Link>
+          <Link to={props.href} title={props.title}>  <i>{props.icon}</i></Link>
         </div> 
 
     )

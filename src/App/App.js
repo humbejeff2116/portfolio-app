@@ -1,7 +1,8 @@
 import React,{Suspense} from 'react';
-import { Route,Switch } from 'react-router-dom';
+import { Route,Switch, useLocation } from 'react-router-dom';
 import './App.css';
 import FallbackLoader from '../components/suspenseLoader/SuspLoader';
+import { AnimatePresence } from "framer-motion";
 const IndexPage = React.lazy(() => import('../pages/IndexPage/IndexPage'));
 const AboutPage = React.lazy(() => import('../pages/AboutPage/AboutPage'));
 const Projectspage = React.lazy(() => import('../pages/ProjectsPage/ProjectsPage'));
@@ -11,11 +12,13 @@ const NotFoundPage = React.lazy(()=> import('../pages/404Page/404') )
 
 
 export default function App() {
+    const location = useLocation();
+    
 
   return (
-
    
-     <Switch>            
+    <AnimatePresence exitBeforeEnter >
+     <Switch location={location} key={location.pathname} >            
         <Route exact  path="/" >
         <Suspense fallback={<FallbackLoader />}>
             < IndexPage />
@@ -47,6 +50,8 @@ export default function App() {
         </Route> 
 
       </Switch> 
+      </AnimatePresence>
+   
 
   )
 }

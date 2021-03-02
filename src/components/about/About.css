@@ -1,54 +1,110 @@
 /** styles.css */
+
+.about-container{
+  display:flex;
+  flex-direction: column;
+  width:80%;
+  margin-left: 10%;
+  margin-right: auto;
+  border:2px solid #55759c;
+  background-color: #1d2c3f;
+  min-height:60vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* border-radius: 4px; */
+  
+}
+
+.about-heading{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+.about-heading h1{
+text-align:center;
+}
+
+.about-heading p{
+  font-size:1.1em;
+  }
+
+.about-panel{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .about-intro{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    /* text-align: center; */
-    /* border:1px solid #55759c; */
-    /* border-radius: 8px; */
-    width:60%;
-    /* min-height:50vh; */
-    margin-top: 15%;
+    width:40%; 
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    /* padding:0.6em; */
   }
-  .about-bio{
-     
+
+  .about-bio{  
     margin-top:3%;
     padding:0.4em;
-    border-radius: 4px;
-  
+    border-radius: 4px; 
   }
+  /* .about-bio span{ 
+  } */
 
 .about-info{
     /* border:1px solid black; */
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    border:2px solid #55759c;
     border-radius: 8px;
-    width:90%;
-    min-height:50vh;
+    width:50%;
+    min-height:40vh;
     margin-left: auto;
     margin-right: auto;
-    align-self: center;
     padding:0.6em;
     color:#55759c;
     color: var(--prim-border-color);
-
 }
 .about-info p{
     color:var(--prim-border-color);
 }
+.about-social{
+  /* border:2px solid #55759c; */
+  width:10%;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+
+}
 
 @media only screen and (max-width:600px){
+
+  .about-container{   
+    width:90%;
+    border-radius: 0;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+     
+  }
   .about-info{
     margin-bottom:2%;
     border-radius: 4px;
-       
+    width:100%;      
 }
+
+.about-panel{
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-intro{
+  width:100%;
+}
+
 
 }

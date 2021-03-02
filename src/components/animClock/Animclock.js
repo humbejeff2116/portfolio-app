@@ -81,7 +81,7 @@ class Clock extends React.Component{
   }
   render(){
     return(
-      <div className="pic-mod-clock">
+      <div className="pic-mod-clock" style={{position:'fixed'}} >
 
                    <section className="clock">
                    <div className="hours-container"   >

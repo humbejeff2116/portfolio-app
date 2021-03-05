@@ -165,32 +165,36 @@ const data = {
     projectsData:[
         {
             imageSrc:jeffweb1,
-           
+            link:"/",          
             projDetails : [
                 { item:"Application Name", content :"Quick buy" },
                 { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js, ( MERN )` },
                 { item:"Description", content:" A web based e-commerce clothing store application with secured user payment gateways " },
-                { item:" Github", content:" A web based e-commerce clothing store " },
+                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/quickbuy-e-store"},
                
             ]
     
         },
         {
             imageSrc:jeffweb1,
+            link:"/",
             projDetails : [
                 { item:"Application Name", content :"Hospital Mangement System " },
                 { item:"Application Stack", content :`MongoDb, Express, Node.js, ` },
                 { item:"Description", content:" A Hospital Management System backend Application Programming Interface ( API )" },
+                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/portfolio-app"},
                
             ]
     
         },
         {
             imageSrc:jeffweb1,
+            link:"/",
             projDetails : [
                 { item:"Application Name", content :"Jeff's Portfolio" },
                 { item:"Application Stack", content :` React.js` },
                 { item:"Description", content:" My personal portfolio web application" },
+                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/portfolio-app"},
                
             ]
     

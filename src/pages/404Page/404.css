@@ -3,16 +3,13 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border:2px solid #55759c;
-    border-radius: 4px;
+    box-shadow: 0 0 3px #55759c;
     width:45%;
     min-height:60vh;
-    /* margin-top: 15%; */
     margin-left: auto;
     margin-right: auto;
     align-self: center;
     background-color: #1d2c3f;
-    /* padding:0.6em; */
   }
 
 
@@ -25,9 +22,5 @@
      border-radius:0;
      
     }
-  
-
-  
-  
   
   }

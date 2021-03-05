@@ -1,18 +1,16 @@
 import React from 'react';
 import  PictureComp from '../pictureModule/Picturemodule';
 import {PagesTemplate} from '../template/Template';
-// import RightPane from '../pictureModule/Rightpane';
-// import ApplicationData from '../../Data/data';
-
-import './contact.css';
+import{ Modal } from '../modalBox/Modal';
 import { motion } from "framer-motion"; 
 import framerMotionSettings from '../FramerMotion/FramerSettings';
 import emailjs from 'emailjs-com';
+import './contact.css';
 
-import emailjsApiKeys from '../../config/config';
 
 
 export default function ContactComp(props) {
+  
  
     return(
         <motion.div     
@@ -25,7 +23,7 @@ export default function ContactComp(props) {
         >
     
         <PagesTemplate 
-        top={ <PictureComp leftPane={ <ContactHeader contactItems={props.contactItems} /> } /> }
+        top={ <PictureComp leftPane={ <ContactHeader  contactItems={props.contactItems} /> } /> }
        
         />
          </motion.div> 
@@ -65,7 +63,7 @@ function ContactHeader(props){
                 {/* contact form starts here */}
                 <div className="contact-form" >
                 
-                    <ContactForm />
+                    <ContactForm  />
                 </div>
         
             </div>
@@ -82,37 +80,62 @@ function ContactCard(props){
                 <p className="about-tg">
                     <i> {props.contactIcon} </i>
                     <span>{ props.contactType +" :"}  </span>    
-                    <span className="contact-item"> {props.contactItem } </span>  
+                    <span className="contact-item"> { props.contactItem } </span>  
                 </p> 
            
             </div>
             
     )
 }
-class ContactForm extends React.Component{
+class ContactForm extends React.Component { 
     constructor(props){
         super(props);
         this.state ={
-            name:'',
-            email:'',
-            subject:'',
-            message:''
-
+            name : '',
+            email : '',
+            subject : '',
+            message : '',
+            sentMessage :false,
+            sendingMessage:false, 
         }
     }
   sendEmail= (e) => {
+      this.setState({
+          sendingMessage:true
+      })
+    const userId = process.env.REACT_APP_USER_ID;
+    const  templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+   
+    
+    console.log(templateId )
         e.preventDefault()
-        emailjs.sendForm(emailjsApiKeys.SERVICE_ID, emailjsApiKeys.TEMPLATE_ID, e.target, emailjsApiKeys.USER_ID)
+        emailjs.sendForm(serviceId, templateId, e.target, userId)
         .then(result => {
-        alert('Message Sent successfully, I\'ll get back to you shortly', result.text);
+
+     
+        this.setState({
+            sentMessage :true,
+            sendingMessage:false 
+        })
+       
         },
         error => {
         alert( 'An error occured, Plese try again',error.text)
+        this.setState({
+            sentMessage :false,
+            sendingMessage:false 
+        })
         })
         .catch( err=>{
             console.error(err)
+              this.setState({
+            sentMessage :false,
+            sendingMessage:false 
+        })
 
         })
+
         }
 
     handleInputChange= (e) =>{
@@ -134,9 +157,26 @@ class ContactForm extends React.Component{
       }
 
     
+      hideModal = ( ) => {
+        this.setState({ sentMessage : false });
+      };
+
+    
     render(){
         return(
             <>
+
+            <Modal show = {this.state.sentMessage} handleClose={this.hideModal}>
+                <div className="modal-header">
+                    <span className="close" onClick={this.hideModal}>&times;</span>
+                </div>
+
+                <div className="modal-content">
+                    <p>Your message have been sent successfully. </p>
+                    <p> I'll get back to you as soon as possible.</p>
+                </div>              
+            </Modal>
+
                  <form onSubmit={this.sendEmail}  autoComplete="off" >
     
                     <div className="contact-form-group">
@@ -166,8 +206,10 @@ class ContactForm extends React.Component{
                         </label>
                     </div>
     
-                    <div className="conct-form-bttn">
-                        <button type="submit" className="btn btn-success">Send</button>
+                    <div className="contact-form-bttn">
+                        <button type="submit" className="btn btn-success">
+                        {this.state.sendingMessage ? 'sending...' : 'Send'}
+                        </button>
                     </div>
     
                 </form>

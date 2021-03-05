@@ -36,7 +36,6 @@
     margin:0;
     padding:0;
     position:fixed;
-    /* width:6rem; */
     background-color: var(--sidenav-bg-primary);
     background-color: #1d2c3f;
     height:100vh;
@@ -44,10 +43,6 @@
     transition:width 0.3s ease;
 }
 
-
-/* .side-nav:hover{
-    width:9rem;
-} */
 
 .side-nav:hover .sidenav-link-text {
     position: absolute;
@@ -86,7 +81,7 @@
 
 .side-nav-link i{
     min-width: 4rem;
-    padding :0.1rem;  
+    padding :0.1rem;
 }
 
 .sidenav-link-text{

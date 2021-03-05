@@ -5,7 +5,7 @@ import ApplicationData from '../../Data/data';
 import { motion } from "framer-motion"; 
 import framerMotionSettings from '../FramerMotion/FramerSettings';
 import {Link} from 'react-router-dom';
-import {RiMailSendLine} from "react-icons/ri";
+import {FaRegEye} from "react-icons/fa"
 import './Projects.css';
 
 
@@ -84,9 +84,9 @@ function Project(props){
             }      
         </div>
         <div className="proj-bttn">
-            <Link to="contact" className="contact-link" >
+            <Link to={props.link} className="contact-link" >
                 <button className="pic-mod-intro-hire">
-                    <i> <RiMailSendLine className="contact-bttn-icon"/></i>
+                    <i> <FaRegEye className="contact-bttn-icon"/></i>
                   View Live Demo
                 </button>
                </Link>
@@ -94,15 +94,18 @@ function Project(props){
         </div>
 
        
-         
-        </div>
+                 </div>
              
     )
 }
 function ProjectBioCard(props){
     return(
         <>
-        <span className="about-tg" ><b>{props.item} :</b> </span> <span className="about-ts" >{props.content}</span><br />
+        {
+            (props.gitHubRepo) ? <><span> <b>{props.item} :</b> </span>  <span><a rel="noreferrer" target="_blank" href={props.gitHubRepo}>{props.gitHubRepo}</a></span> </> : 
+            <><span className="about-tg" ><b>{props.item} : </b> </span> <span className="about-ts" >{props.content}</span><br /></>
+
+        }
         </>
     )
 }

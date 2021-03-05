@@ -3,15 +3,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border:2px solid #55759c;
-
+  /* border:2px solid #55759c; */
+  box-shadow: 0 0 3px #55759c;
   /* border-radius: 8px; */
   width:35%;
   min-height:55vh;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
-  align-self: center;
+  /* align-self: center; */
   padding:0.6em;
   background-color: #1d2c3f;
 }
@@ -24,6 +24,11 @@
   display:flex;
   flex-direction: column;
   justify-content:center;
+
+}
+.index-info a{
+  text-decoration: none;
+
 
 }
 

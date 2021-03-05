@@ -181,7 +181,8 @@
   .skills-mod{
     display: flex;
     flex-direction: column;
-    border:2px solid #55759c;
+    /* border:2px solid #55759c; */
+    box-shadow: 0 0 3px #55759c;
     min-height:20vh;
     width:60%;
     margin-bottom: 1%;
@@ -207,7 +208,8 @@
   .skills-mod-ittm{
     display:flex;
     justify-content: center;
-    border:2px solid var(--prim-border-color);
+   
+    border:1px solid var(--sec-border-color);
     border-radius: 4px;   
     margin:1%;
     width:35%;

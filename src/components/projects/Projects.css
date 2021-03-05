@@ -4,7 +4,8 @@
   width:80%;
   margin-left: auto;
   margin-right: auto;
-  border:2px solid #55759c;
+  /* border:1px solid #55759c; */
+  box-shadow: 0 0 3px #55759c;
   min-height:80vh;
   margin-top: auto;
   margin-bottom: auto;
@@ -13,8 +14,7 @@
 }
 
 .proj-heading{
-    /* border:2px solid #55759c; */
-  margin-top: 2%;
+  
   width:100%;
   margin-left: auto;
   margin-right: auto;
@@ -40,28 +40,39 @@ text-align:center;
 .project-mod-intro{
     display:flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* text-align: center; */
-    border:1px solid #55759c;
-    /* border-radius: 4px; */
     min-height:60vh;
     margin-top: 1%;
     margin-bottom: 2%;
     padding:0.6em;
     color:var(--prim-border-color);
     flex-wrap: wrap;
-    /* border:4px solid #55759c; */
     width:30%;
+    background-color: var(--sidenav-bg-primary);
+      /* box-shadow:0 0 3px #55759c; */
+      transition:all 0.3s ease;
+
   }
 
-  /* make  picmod intro last child to stick at the bottom */
+  .project-mod-intro:hover{
+    cursor:pointer;
+    box-shadow: 0 0 3px #55759c;
+    border: 0 ;
+   
+  }
+
+ 
+
   .projects-info{
-        /* border:2px solid #55759c; */
-        margin-top:5%;
 
+        margin-top:5%;
   }
+  .projects-info a{
+   
+    color: var(--prim-color)
+  
+
+}
   .project-social{
-    /* border:2px solid #55759c; */
     width:10%;
     display:flex;
     flex-direction:row;
@@ -69,8 +80,58 @@ text-align:center;
   }
 
   .proj-bttn{
-     border:2px solid #55759c;
-     margin:4%;
+    
+     width:100%;
+     margin-top: auto;
+     align-self:center;
+  }
+  .proj-bttn a{
+    text-decoration: none;
+   
+ }
+
+
+  .proj-bttn button{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:8vh;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #008751;
+    color:#00b625;
+    color:#ffffff;
+    font-size:0.9em;
+    background-color: #1d2c3f;
+    transition:all 0.3s ease;
+    text-decoration: none;
+    margin-top:2%;
+    margin-bottom:2%;
+    transition:all 0.3s ease;
+
+  }
+  .proj-bttn button:hover{
+    cursor:pointer;
+   text-decoration: underline;
+  
+
+  }
+  .contact-bttn-icon{
+    
+    width: 1.5em;
+    height:1.5em;
+    margin-left: -25%;
+    margin-top:20%;
+    color:#ffffff;
+
+  }
+  .contact-bttn-text{
+    border:1px solid black;
+    width:100%;
+    width: 1.5em;
+    height:1.5em;
 
   }
 

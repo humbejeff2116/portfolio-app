@@ -5,9 +5,9 @@
     bottom:40%;
     align-self: center;  
     background-color: var(--sidenav-bg-primary);
-    border-bottom:2px solid var(--sec-border-color);
-    border-right:2px solid var(--sec-border-color);
-    border-left:2px solid  var(--sec-border-color);
+    border-bottom:1px solid var(--sec-border-color);
+    border-right:1px solid var(--sec-border-color);
+    border-left:1px solid  var(--sec-border-color);
     margin-right:30px;
     word-wrap: break-word;
     word-break: break-all;
@@ -29,9 +29,11 @@
 }
 
 .pic-mod-nav-item{
-    border-top:2px solid var(--sec-border-color);
+    border-top:1px solid var(--sec-border-color);
+  
     display: flex;
 }
+ 
 
 .pic-mod-nav-item:nth-last-child(2){
     border-bottom: none;    

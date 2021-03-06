@@ -390,6 +390,10 @@ code {
   .pic-mod-left{
     width:100%;
   }
+  .nav-icon{
+    width: 1.4em;
+    height:1.4em;
+  }
 
   /* .pic-mod-intro{
   

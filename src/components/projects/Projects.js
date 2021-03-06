@@ -39,7 +39,7 @@ function ProjectsHeader(props){
 
        <div className="proj-heading" >
                 <h1>My Projects</h1>     
-        </div>
+       </div>
 
             <div className="proj-panel" >     
                 {
@@ -102,8 +102,8 @@ function ProjectBioCard(props){
     return(
         <>
         {
-            (props.gitHubRepo) ? <><span> <b>{props.item} :</b> </span>  <span><a rel="noreferrer" target="_blank" href={props.gitHubRepo}>{props.gitHubRepo}</a></span> </> : 
-            <><span className="about-tg" ><b>{props.item} : </b> </span> <span className="about-ts" >{props.content}</span><br /></>
+            (props.gitHubRepo) ? <><span> <b>{props.item} </b> </span>  <span><a rel="noreferrer" target="_blank" href={props.gitHubRepo}>view code</a></span><br /> </> : 
+            <><span className="about-tg" ><b>{props.item}  </b> </span> <span className="about-ts" >{props.content}</span></>
 
         }
         </>

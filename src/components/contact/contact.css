@@ -254,6 +254,24 @@
     }
     
   }
+
+  @media only screen and (max-width:966px){
+    .contact-container{
+     
+      width:85%;
+      margin-left: 4%;
+      margin-right:0;
+    
+      box-shadow: 0 0 3px #55759c;
+      min-height:70vh;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: #1d2c3f;
+    
+    }
+ 
+  
+  }
   @media only screen and (max-width:840px){
     .contact-intro{
      

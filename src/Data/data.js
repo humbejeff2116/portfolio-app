@@ -170,7 +170,7 @@ const data = {
             link:"/",          
             projDetails : [
                 { item:"Application Name", content :"Quick buy" },
-                { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js, ( MERN )` },
+                { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js` },
                 { item:"Description", content:" A web based e-commerce clothing store application with secured user payment gateways " },
                 { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/quickbuy-e-store"},
                
@@ -183,7 +183,7 @@ const data = {
             projDetails : [
                 { item:"Application Name", content :"Hospital Mangement System " },
                 { item:"Application Stack", content :`MongoDb, Express, Node.js, ` },
-                { item:"Description", content:" A Hospital Management System backend Application Programming Interface ( API )" },
+                { item:"Description", content:" A Hospital Management System backend Application Programming Interface" },
                 { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/portfolio-app"},
                
             ]

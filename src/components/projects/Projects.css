@@ -40,16 +40,17 @@ text-align:center;
 .project-mod-intro{
     display:flex;
     flex-direction: column;
+    width:30%;
     min-height:60vh;
     margin-top: 1%;
     margin-bottom: 2%;
     padding:0.6em;
     color:var(--prim-border-color);
     flex-wrap: wrap;
-    width:30%;
     background-color: var(--sidenav-bg-primary);
       /* box-shadow:0 0 3px #55759c; */
       transition:all 0.3s ease;
+    align-self: center;
 
   }
 
@@ -65,6 +66,7 @@ text-align:center;
   .projects-info{
 
         margin-top:5%;
+          border:2px solid #55759c;
   }
   .projects-info a{
    
@@ -142,18 +144,23 @@ text-align:center;
       margin-top:5%;
       margin-bottom:5%;
       border-radius:0;
-     
+      margin-left: auto;
+      
     }
     
     .project-mod-intro{
-      margin-left: auto;
-      margin-right: auto;
-      width:90%;
+      width:100%;
      
     }
 
     .proj-panel{
       flex-direction: column; 
+      justify-content: space-around;
+    }
+    .project-image{
+      border:1px solid black;
+      width:100%;
+
     }
       
   }

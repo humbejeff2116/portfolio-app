@@ -16,6 +16,8 @@ import { DiJavascript1, DiNpm } from "react-icons/di";
 import {BiHome,BiUser,BiFolder} from "react-icons/bi";
 import {RiBookOpenLine,RiContactsBookLine,RiMailSendFill} from "react-icons/ri";
 import jeffweb1 from '../images/jeffweb1.jpg';
+import Humbes_portfolio from '../images/Humbe_Jeffreys_portfolio(1).png';
+// import quick_buy from '../images/quick_buy.png'
 
 
 
@@ -164,7 +166,7 @@ const data = {
     ],
     projectsData:[
         {
-            imageSrc:jeffweb1,
+            imageSrc:Humbes_portfolio,
             link:"/",          
             projDetails : [
                 { item:"Application Name", content :"Quick buy" },
@@ -188,7 +190,7 @@ const data = {
     
         },
         {
-            imageSrc:jeffweb1,
+            imageSrc:Humbes_portfolio,
             link:"/",
             projDetails : [
                 { item:"Application Name", content :"Jeff's Portfolio" },

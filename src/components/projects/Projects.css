@@ -103,12 +103,13 @@ text-align:center;
     align-items: center;
     justify-content: center;
     height:8vh;
-    width:80%;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     margin-top:2%;
     margin-bottom:2%;
-    border:2px solid #008751;
+    border:1px solid #008751;
+    border-radius: 4px;
     color:#ffffff;
     background-color: #1d2c3f;
     font-size:0.9em;
@@ -123,18 +124,18 @@ text-align:center;
   }
   .contact-bttn-icon{
     
-    width: 1.5em;
-    height:1.5em;
+    width: 1.3em;
+    height:1.3em;
     margin-left: -25%;
     margin-top:20%;
     color:#ffffff;
 
   }
   .contact-bttn-text{
-    border:1px solid black;
+
     width:100%;
-    width: 1.5em;
-    height:1.5em;
+    width: 1.3em;
+    height:1.3em;
 
   }
 
@@ -151,6 +152,7 @@ text-align:center;
     
     .project-mod-intro{
       width:90%;
+      box-shadow:0 0 3px #55759c;
      
     }
 
@@ -168,12 +170,22 @@ text-align:center;
 
     }
     .projects-info{
-      border:1px solid black;
+     
       display:flex;
       flex-direction: column;
       justify-content:center;
       flex-wrap: wrap;
+      text-align: left;
+      word-wrap: break-word;
      
 }
+
+.proj-bttn button{
+ 
+  width:100%;
+  margin-top: 0.5%;
+ 
+}
+
       
   }

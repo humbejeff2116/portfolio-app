@@ -41,17 +41,7 @@ function IndexInfoCard(props){
   
     return(
     <>
-        {/* <div className="smooth-image-wrapper">
-        <img
-          src={props.imageSrc}
-          alt="about-me"
-          width="100%"
-          height="100%"
-          className={`smooth-image image-${props.imageLoaded ? 'visible' :  'hidden'}`}
-         
-        />
-      
-      </div>  */}
+    
            <h1>{props.heading} </h1> 
            <p>{props.body}</p>
               

@@ -209,7 +209,10 @@
     display:flex;
     justify-content: center;
    
-    border:1px solid var(--sec-border-color);
+    /* border:1px solid var(--sec-border-color); */
+    background-color: var(--sidenav-bg-primary);
+    box-shadow: 0 0 2px #55759c;
+    
     border-radius: 4px;   
     margin:1%;
     width:35%;

@@ -96,7 +96,8 @@ class ContactForm extends React.Component {
             subject : '',
             message : '',
             sentMessage :false,
-            sendingMessage:false, 
+            sendingMessage:false,
+            mssgErr:false, 
         }
     }
   sendEmail= (e) => {
@@ -121,17 +122,19 @@ class ContactForm extends React.Component {
        
         },
         error => {
-        alert( 'An error occured, Plese try again',error.text)
+       
         this.setState({
             sentMessage :false,
-            sendingMessage:false 
+            sendingMessage:false,
+            mssgErr:true, 
         })
         })
         .catch( err=>{
             console.error(err)
               this.setState({
             sentMessage :false,
-            sendingMessage:false 
+            sendingMessage:false,
+            mssgErr:true,  
         })
 
         })
@@ -158,24 +161,48 @@ class ContactForm extends React.Component {
 
     
       hideModal = ( ) => {
-        this.setState({ sentMessage : false });
+        this.setState({ 
+            sentMessage : false ,
+            mssgErr :false,
+        });
       };
 
     
     render(){
         return(
             <>
+            {
+                (this.state.mssgErr) && (
+                    <Modal show = {this.state.mssgErr } handleClose={this.hideModal}>
+                    <div className="modal-header">
+                        <span className="close" onClick={this.hideModal}>&times;</span>
+                    </div>
+    
+                    <div className="modal-content">
+                        <p> An error occured while sending message. </p>
+                        <p> Please wait and try again.</p>
+                    </div>              
+                </Modal> 
 
-            <Modal show = {this.state.sentMessage} handleClose={this.hideModal}>
-                <div className="modal-header">
-                    <span className="close" onClick={this.hideModal}>&times;</span>
-                </div>
 
-                <div className="modal-content">
-                    <p>Your message have been sent successfully. </p>
-                    <p> I'll get back to you as soon as possible.</p>
-                </div>              
-            </Modal>
+                )
+            }
+            {
+                (this.state.sendingMessage) && (
+                    <Modal show = {this.state.sentMessage} handleClose={this.hideModal}>
+                        <div className="modal-header">
+                            <span className="close" onClick={this.hideModal}>&times;</span>
+                        </div>
+        
+                        <div className="modal-content">
+                            <p>Your message have been sent successfully. </p>
+                            <p> I'll get back to you as soon as possible.</p>
+                        </div>              
+                    </Modal> 
+                )
+            }
+
+          
 
                  <form onSubmit={this.sendEmail}  autoComplete="off" >
     

@@ -102,3 +102,26 @@
   .display-none {
     display: none;
   }
+  @media screen and (max-width:600px){
+    .modal-main {
+      
+      width:80%;
+     
+      top:25%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    
+      
+    }
+    .modal-content{
+      margin-top:0%;
+     
+  
+  }
+
+  .modal-bttn button{
+   
+    height: 40px;
+    
+}
+  }

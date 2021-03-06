@@ -34,13 +34,7 @@
 }
 /* style for loader ends here */
 
-  @media  only screen and (max-width:600px){
-    .loader {
-      margin-top:15%;
-            
-   }
-    
-}
+
 
 /* loader 2 styles begin here */
 .loaders-container {
@@ -102,7 +96,8 @@
                
   border:0;
   justify-content: center;
-  background-color: var(--sidenav-bg-primary);  
+  background-color: var(--sidenav-bg-primary); 
+  /* border: 5px solid var( --prim-color);  */
  
 }
 
@@ -132,9 +127,18 @@
 /* style for loader ends here */
 
   @media  only screen and (max-width:600px){
-    .loader {
+    /* .loader {
       margin-top:15%;
             
-   }
+   } */
+   .skel-loader {
+             
+    margin-top:-40%;
+   
+  }
+
+
+
     
 }
+

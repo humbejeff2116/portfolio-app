@@ -87,7 +87,7 @@ function Project(props){
             <Link to={props.link} className="contact-link" >
                 <button className="pic-mod-intro-hire">
                     <i> <FaRegEye className="contact-bttn-icon"/></i>
-                  View Live Demo
+                  View 
                 </button>
                </Link>
 

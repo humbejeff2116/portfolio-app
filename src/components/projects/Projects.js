@@ -5,8 +5,12 @@ import ApplicationData from '../../Data/data';
 import { motion } from "framer-motion"; 
 import framerMotionSettings from '../FramerMotion/FramerSettings';
 import {Link} from 'react-router-dom';
-import {FaRegEye} from "react-icons/fa"
+import {FaRegEye} from "react-icons/fa";
+import Carousel from '../carousel/Carousel'
+
+
 import './Projects.css';
+
 
 
 
@@ -41,7 +45,7 @@ function ProjectsHeader(props){
                 <h1>My Projects</h1>     
        </div>
 
-            <div className="proj-panel" >     
+            <div className="proj-panel" >       
                 {
                     props.projectsData.map((data,i)=>
                     <Project key={i} {...data} />
@@ -63,17 +67,24 @@ function Project(props){
 
         <div className="project-mod-intro">
             <div className="project-image">
-            <img
+            {/* <img
             src={props.imageSrc}
             alt="jeffs-project"
             width="100%"
             height="100%"
             className={`smooth-image`}          
-        />
-
-            </div>
+        /> */}
       
 
+            <Carousel projImages={props.projImages} />
+     
+
+   
+       
+
+            </div>
+          
+      
         <div className="projects-info">
             { 
 
@@ -109,3 +120,6 @@ function ProjectBioCard(props){
         </>
     )
 }
+
+
+

@@ -19,8 +19,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
+  scrollbar-color: var(--sidenav-bg-primary) var(--prim-border-color);
+  /* scrollbar-width: thin; */
+
   background-color: var(--sidenav-bg-primary);
 }
 ::-webkit-scrollbar{
@@ -32,7 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color:#6649b8;
+  background-color:var(--prim-border-color);
 }
 
 .pic-mod-contnr{

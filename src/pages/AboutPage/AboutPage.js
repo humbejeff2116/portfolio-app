@@ -13,9 +13,14 @@ export default function AboutPage(props){
         
         <Template>
              <Helmet>
-                <meta charSet="utf-8" />
-                <title>About me</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <meta charset="utf-8" />
+                <title>About Humbe Jeffrey</title> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="description" content="Information about Humbe Jeffrey"/> 
+                {/* google search engine tags */}
+                <meta itemprop="name" content="About Humbe Jeffrey "/>
+                 <meta itemprop="description" content="Information about Humbe Jeffrey"/>
+                 {/* <meta itemprop="image" content="%PUBLIC_URL%/favicon.ico"/> */}       
             </Helmet>
             <AboutComp />
         </Template>

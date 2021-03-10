@@ -16,9 +16,15 @@ export default function ContactPage(props){
     return(
         <Template>
              <Helmet>
-                <meta charSet="utf-8" />
-                <title>Contact me</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                
+             <meta charset="utf-8" />
+                <title>Contact Humbe Jeffrey</title> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" ></meta>
+                <meta name="description" content="Get in touch, contact or message Humbe Jeffrey"/> 
+                {/* google search engine tags */}
+                <meta itemprop="name" content="Contact Humbe Jeffrey"/>
+                 <meta itemprop="description" content="Get in touch, contact or message Humbe Jeffrey"/>
+                 {/* <meta itemprop="image" content="%PUBLIC_URL%/favicon.ico"/> */}  
             </Helmet>
             <ContactComp contactItems = {contactItems} />
         </Template>

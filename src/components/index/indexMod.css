@@ -17,6 +17,12 @@
 }
 .pic-mod-intro p{
   font-size:1.1em;
+  font-family: apple color emoji,
+   segoe ui emoji, noto color emoji,
+    android emoji, emojisymbols,
+     emojione mozilla,
+      twemoji mozilla,
+       segoe ui symbol;
 
 }
 .index-info{

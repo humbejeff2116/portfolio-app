@@ -41,9 +41,10 @@ function IndexInfoCard(props){
   
     return(
     <>
-    
+          <div className="index-content">
            <h1>{props.heading} </h1> 
            <p>{props.body}</p>
+           </div>
               
                <Link to="contact" className="contact-link" >
                 <button className="pic-mod-intro-hire">

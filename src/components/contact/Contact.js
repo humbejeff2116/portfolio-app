@@ -188,7 +188,7 @@ class ContactForm extends React.Component {
                 )
             }
             {
-                (this.state.sendingMessage) && (
+                (this.state.sentMessage) && (
                     <Modal show = {this.state.sentMessage} handleClose={this.hideModal}>
                         <div className="modal-header">
                             <span className="close" onClick={this.hideModal}>&times;</span>

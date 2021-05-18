@@ -14,7 +14,7 @@ export default function Footer(props) {
                     <span><a href="/term" target="_blank">Developed by Humbe Jeffrey</a></span> 
                 </div>
                 <div  className ="footer-legal-list">
-                    <span><a href='/#'>&copy;{ new Date().getFullYear()} Copyright Huje Soft Inc.</a></span>
+                    <span><a href='/#'>&copy;{ new Date().getFullYear()} Copyright @jeff.codes</a></span>
                 </div>  
            </div>
            <div className="footer-social">

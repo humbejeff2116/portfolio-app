@@ -9,9 +9,8 @@ import framerMotionSettings from '../FramerMotion/FramerSettings';
 import './indexMod.css';
 
 export default function IndexComp(props) {
-  
    
-    return(
+    return (
          <motion.div           
          initial="initial"  
          animate="in" 
@@ -23,8 +22,6 @@ export default function IndexComp(props) {
             <>
             <IndexPageTemplate top={ <PictureComp leftPane = {<IndexLeftPane/>}  /> } bottom={<  SkillsLeftPane /> } />
             </>
-        </motion.div> 
-             
+        </motion.div>        
     )
-
 }

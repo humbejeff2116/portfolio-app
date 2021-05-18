@@ -3,91 +3,76 @@
   flex-direction:row;
   min-height:80vh;
   background-color: var(--sidenav-bg-primary);
-      /* border:2px solid #55759c; */
 }
 .social-nav{
-  /* border:2px solid #55759c; */
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-end;
-
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
 }
 
 .pgtemp-bottom-contr{
-    display:flex;
-    flex-direction: row;
-    min-height: 60vh;
-    background-color: var(--sidenav-bg-primary);
-     margin-left: 6rem;
-  }
-  
-  .pgtemp-bttm-bdy-left{
-    width:60%;  
-    display:flex;
-    flex-direction: column;
-   justify-content: center;
-   min-height:30vh;
-   width:60%; 
-  }
-  /* .pgetemp-bttm-bdy-right{
-   
-  
-  } */
-  .pge-top-contr{
-    min-height:100vh;
-  }
-  .children-container{
-    /* border:4px solid #55759c; */
-    width:100%;
-    /* margin-left: 6rem; */
+  display:flex;
+  flex-direction: row;
+  min-height: 60vh;
+  background-color: var(--sidenav-bg-primary);
+  margin-left: 6rem;
+}
 
-  }
+.pgtemp-bttm-bdy-left{
+  width:60%;  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:30vh;
+  width:60%; 
+}
 
-  /* .pgtemp-only-bottom-contr{
-    
-   
-  } */
+.pge-top-contr{
+  min-height:100vh;
+}
+
+.children-container{
+  width:100%;
+}
 
 @media only screen and (max-width:600px){
   .pgtemp-bottom-contr{
-   
-     margin-left:0;
+    margin-left:0;
   }
+
   .pge-top-contr{
     min-height:80vh;
     background-color: var(--sidenav-bg-primary);
   }
-    .container{ 
-        margin-left:0;
-        margin-top:3.0rem;    
-    }
 
-    .pgetemp-bttm-bdy-right{
-      display:none;
-    }
+  .container{ 
+    margin-left:0;
+    margin-top:3.0rem;    
+  }
 
-    .pgtemp-bttm-bdy-left{
-      width:100%;
-     
-    }
+  .pgetemp-bttm-bdy-right{
+    display:none;
+  }
+
+  .pgtemp-bttm-bdy-left{
+    width:100%; 
+  }
 
 }
 
 @media only screen and (max-width:966px){
  
-    .container{ 
-        margin-left:6rem;
-        margin-top:3.0rem;    
-    }
-
-   
+  .container{ 
+    margin-left:6rem;
+    margin-top:3.0rem;    
+  }
+  
 }
+
 @media only screen and (max-width:700px){
  
   .container{ 
-      margin-left:0;
-      
+    margin-left:0;   
   }
-
  
 }

@@ -1,22 +1,22 @@
 import React from 'react';
-import './Skillsmodule.css';
 import {SkillsComp , SkillsTemplate} from './Skillsmodule'; 
-import LeftPaneComp from './Leftpane'
+import LeftPaneComp from './Leftpane';
 import SkillsRightPane from './Rightpane';
 import ApplicationData from '../../Data/data';
+import './Skillsmodule.css';
 
 
 
-export default function SkillsLeftPane(props){
+export default function SkillsLeftPane( ) {
     const skills = ApplicationData.getSkills();
-    return(
+    return (
         <LeftPaneComp >
              <SkillsComp skills={ skills } />
         </LeftPaneComp>
     )
 }
 
-export function SkillsModule(){
+export function SkillsModule( ) {
     return(
        <SkillsTemplate leftPane = {<SkillsLeftPane />} rightPane = { <SkillsRightPane /> } />
     )

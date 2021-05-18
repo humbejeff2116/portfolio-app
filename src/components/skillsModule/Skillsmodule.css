@@ -3,264 +3,260 @@
 /* later set to */
 /*  border:2px solid #3d5470; */
 .html{
-    color:#F16529;
-    width: 1.5em;
-    height:1.5em;
+  color:#F16529;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .html-spn{
-    color:#ffffff;
+  color:#ffffff;
 }
 
 .css{
-    color: #264de4;
-    width: 1.5em;
-    height:1.5em;
+  color: #264de4;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .css-spn{
-    color: #2965f1;
+  color: #2965f1;
 }
 
 .react{
-    color:#61DBFB;
-    width: 1.5em;
-    height:1.5em;
+  color:#61DBFB;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .react-spn{
-    color:#61DBFB;
+  color:#61DBFB;
 }
 
 .js{
-    color:#f0db4f;
-    padding :0.1rem;
-    width: 1.5em;
-    height:1.5em; 
+  color:#f0db4f;
+  padding :0.1rem;
+  width: 1.5em;
+  height:1.5em; 
 }
 
 .js-spn{
-    color:#f0db4f;
+  color:#f0db4f;
 }
 
 .java{
-    color:#0d8ac7;
-    width: 1.5em;
-    height:1.5em;
+  color:#0d8ac7;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .java-spn{
-    color:#eb2024;
+  color:#eb2024;
 }
 
 .node{
-    color:#3C873A;
-    width: 1.5em;
-    height:1.5em;
+  color:#3C873A;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .node-spn{
-    color:#3C873A;
+  color:#3C873A;
 }
 
 .spring{
-    color:#8fc25c;
-    width: 1.5em;
-    height:1.5em;
+  color:#8fc25c;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .spring-spn{
-    color:#ffffff;
+  color:#ffffff;
 }
 
 .webpack{
-    color:#1C78C0;
-    width: 1.5em;
-    height:1.5em;
+  color:#1C78C0;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .webpack-spn{  
-    color:#8ED5FA;
+  color:#8ED5FA;
 }
 
 .git{
-    color:#f34f29;
-    width: 1.5em;
-    height:1.5em;
+  color:#f34f29;
+  width: 1.5em;
+  height:1.5em;
 }
 
 .git-spn{
-    color:#ffffff;
+  color:#ffffff;
 }
+
 .npm{
   color:#cb3837;
   width: 1.5em;
   height:1.5em;
 }
+
 .npm-spn{
   color:#ffffff;
-
 }
+
 .yarn{
   color:#2b8ab5;
-    width: 1.5em;
+  width: 1.5em;
   height:1.5em;
 }
+
 .yarn-spn{
   color:#2b8ab5;
-
 }
+
 .babel{
   color:#c8c77c;
   width: 1.5em;
   height:1.5em;
-
 }
+
 .babel-spn{
   color:#c8c77c;
-
 }
+
 .maven{
   color:#9f004a;
   width: 1.5em;
   height:1.5em;
-
 }
+
 .maven-spn{
   color:#d54d25;
-
 }
 
 .skills-mod-ittm i{   
-    padding :0.1rem;      
-  }
-
-  .skills-mod-ittm p{ 
-    display:flex;
-    align-items: center;
-    color:var( --prim-color);
-    flex-wrap: wrap; 
-  }
-
-  .skills-temp-contr{ 
-    min-height: 60vh;
-    background-color: var(--sidenav-bg-primary);
-     display:flex;
-    flex-direction:row;
-     margin-left:6rem;
-     /* border:1px solid black; */
-  }
-
-  .skills-temp-left{
-    display:flex;
-    flex-direction: column;
-    width:60%; 
-  }
-  
-  .skills-mod-hd{
-    display:flex;
-    justify-content: center;
-    text-align: center; 
-  }
-
-  .skills-mod-hd-title{
-    margin:1%;
-    width:35%;
-    text-align: center; 
-  }
-
-  .skills-mod-hd-title h2{ 
-    color:var( --prim-color);
-  }
-  
-  .skills-mod-panel{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-mod{
-    display: flex;
-    flex-direction: column;
-    /* border:2px solid #55759c; */
-    box-shadow: 0 0 3px #55759c;
-    min-height:20vh;
-    width:60%;
-    margin-bottom: 1%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #1d2c3f;
-  }
-
-  .skills-mod-ttle{
-    text-align: center;
-    color:var( --prim-color); 
-  }
-
-  .skills-mod-ls{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-      flex-wrap: wrap;
-    text-align: center;
-    margin:1%;
+  padding :0.1rem;      
 }
 
-  .skills-mod-ittm{
-    display:flex;
-    justify-content: center;
-   
-    /* border:1px solid var(--sec-border-color); */
-    background-color: var(--sidenav-bg-primary);
-    box-shadow: 0 0 2px #55759c;
-    
-    border-radius: 4px;   
-    margin:1%;
-    width:35%;
-  }
+.skills-mod-ittm p{ 
+  display:flex;
+  align-items: center;
+  color:var( --prim-color);
+  flex-wrap: wrap; 
+}
+
+.skills-temp-contr{ 
+  min-height: 60vh;
+  background-color: var(--sidenav-bg-primary);
+  display:flex;
+  flex-direction:row;
+  margin-left:6rem;
+}
+
+.skills-temp-left{
+  display:flex;
+  flex-direction: column;
+  width:60%; 
+}
+
+.skills-mod-hd{
+  display:flex;
+  justify-content: center;
+  text-align: center; 
+}
+
+.skills-mod-hd-title{
+  margin:1%;
+  width:35%;
+  text-align: center; 
+}
+
+.skills-mod-hd-title h2{ 
+  color:var( --prim-color);
+}
+
+.skills-mod-panel{
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-mod{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 3px #55759c;
+  min-height:20vh;
+  width:60%;
+  margin-bottom: 1%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #1d2c3f;
+}
+
+.skills-mod-ttle{
+  text-align: center;
+  color:var( --prim-color); 
+}
+
+.skills-mod-ls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin:1%;
+}
+
+.skills-mod-ittm{
+  display:flex;
+  justify-content: center;
+  background-color: var(--sidenav-bg-primary);
+  box-shadow: 0 0 2px #55759c;
+  border-radius: 4px;   
+  margin:1%;
+  width:35%;
+}
 
 @media  only screen and (max-width:600px){
   .skills-mod{
-    
     width:90%;
     margin-bottom: 5%;
-   
   }
-    .skills-mod-ittm p{ 
-        color:var( --prim-color);      
-        flex-direction: column;   
+  .skills-mod-ittm p{ 
+    color:var( --prim-color);      
+    flex-direction: column;   
+  }
+
+  .skills-temp-contr{     
+    margin-left:0;
+  }
+
+  .skills-temp-left{
+      width:100%;     
     }
 
-    .skills-temp-contr{     
-        margin-left:0;
+  .skills-temp-right{
+      display:none;
     }
+    
+  .skills-mod-ittm i{     
+      padding :0;       
+    } 
 
-    .skills-temp-left{
-        width:100%;     
-      }
-
-    .skills-temp-right{
-        display:none;
-      }
-      
-    .skills-mod-ittm i{     
-        padding :0;       
-      }   
 }
 
 @media only screen and (min-width:600px){
-    .skills-temp-contr{     
-        margin-left:0;
-    }
+  .skills-temp-contr{     
+      margin-left:0;
+  }
 
-    .skills-temp-left{  
-        width:60%;      
-      }
+  .skills-temp-left{  
+      width:60%;      
+  }
 
-    .skills-temp-right{
-        display:flex;
-      }
+  .skills-temp-right{
+      display:flex;
+  }
            
-   }
+}
 
 
 

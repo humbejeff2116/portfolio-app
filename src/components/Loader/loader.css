@@ -32,9 +32,6 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-/* style for loader ends here */
-
-
 
 /* loader 2 styles begin here */
 .loaders-container {
@@ -45,17 +42,16 @@
   min-height:20vh;
   text-align: center;
   font-size: 0;
-  
-  
 }
+
 .loaders-container .container {
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 30px;
-    width: 25%;
-    height: 140px;
-  }
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 25%;
+  height: 140px;
+}
   
 .circleloader {
   position: absolute;
@@ -66,8 +62,7 @@
   width: 80px;
   height: 20px;
   padding: 4px;
-  background: rgba(255, 255, 255, 0.4);
-  
+  background: rgba(255, 255, 255, 0.4); 
 }
 .circleloader:before {
     content: '';
@@ -88,21 +83,17 @@
 /* skeleton loader  */
 .skel-loader-container{
   width:100%;
- min-height:100vh;
+  min-height:100vh;
   margin-left:auto;
   margin-right:auto;
   display:flex;
-  flex-direction: column;              
-               
+  flex-direction: column;                          
   border:0;
   justify-content: center;
   background-color: var(--sidenav-bg-primary); 
-  /* border: 5px solid var( --prim-color);  */
- 
 }
 
-.skel-loader {
-             
+.skel-loader {           
   border: 5px solid var(--sidenav-bg-primary);
   border-radius: 50%;
   border-top: 5px solid var( --prim-color);
@@ -127,18 +118,7 @@
 /* style for loader ends here */
 
   @media  only screen and (max-width:600px){
-    /* .loader {
-      margin-top:15%;
-            
-   } */
-   .skel-loader {
-             
+   .skel-loader {         
     margin-top:-40%;
-   
-  }
-
-
-
-    
+  }   
 }
-

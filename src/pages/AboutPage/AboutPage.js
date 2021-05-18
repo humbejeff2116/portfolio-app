@@ -5,12 +5,11 @@ import {Helmet} from "react-helmet";
 
 
 
-export default function AboutPage(props){
+export default function AboutPage( ) {
     useEffect(()=>{
         window.scrollTo(0,0)       
      },[]);
-    return(
-        
+    return ( 
         <Template>
              <Helmet>
                 <meta charset="utf-8" />
@@ -19,11 +18,10 @@ export default function AboutPage(props){
                 <meta name="description" content="Information about Humbe Jeffrey"/> 
                 {/* google search engine tags */}
                 <meta itemprop="name" content="About Humbe Jeffrey "/>
-                 <meta itemprop="description" content="Information about Humbe Jeffrey"/>
+                <meta itemprop="description" content="Information about Humbe Jeffrey"/>
                  {/* <meta itemprop="image" content="%PUBLIC_URL%/favicon.ico"/> */}       
             </Helmet>
             <AboutComp />
         </Template>
     )
-
 }

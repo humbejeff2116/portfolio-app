@@ -5,14 +5,13 @@ import {Helmet} from "react-helmet";
 
 
 
-export default function ProjectsPage(props){
+export default function ProjectsPage( ) {
     
     useEffect(()=>{
         window.scrollTo(0,0)       
      },[]);
 
     return(
-        
         <Template>
             <Helmet>
             <meta charset="utf-8" />
@@ -25,8 +24,6 @@ export default function ProjectsPage(props){
                  {/* <meta itemprop="image" content="%PUBLIC_URL%/favicon.ico"/> */}   
             </Helmet>
             < ProjectComp />
-        </Template>
-        
+        </Template>  
     )
-
 }

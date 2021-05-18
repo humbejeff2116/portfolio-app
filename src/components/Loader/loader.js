@@ -1,20 +1,17 @@
 import React from 'react';
-import './loader.css'
+import './loader.css';
 
-export default function PageLoader(){
-    return(
+export default function PageLoader() {
+    return (
         <div className="loader-container" id="loader">
-        <div className="loader"></div>
+            <div className="loader"> </div>
         </div>
     )
-
 }
-export function SkeletonLoader(){
-    return(
+export function SkeletonLoader() {
+    return (
         <div className="skel-loader-container" >
-        <div className="skel-loader"></div>
+            <div className="skel-loader"> </div>
         </div>
-
     )
 }
-

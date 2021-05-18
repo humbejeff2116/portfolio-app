@@ -10,12 +10,11 @@ import './404.css';
 
 
 
-export default function NotFoundPage(props){
-    useEffect(()=>{
+export default function NotFoundPage( ) {
+    useEffect(()=> {
         window.scrollTo(0,0)       
      },[]);
-    return(
-        
+    return (
         <Template>
             <Helmet>
                 <meta charSet="utf-8" />
@@ -23,16 +22,13 @@ export default function NotFoundPage(props){
                 <meta name="description" content="Nnot found page" />
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-           
            <PagesTemplate  top={ <PictureComp leftPane={ <NotFoundComp  /> } /> } />
         </Template>
     )
-
 }
 
-
-function NotFoundComp(props){
-    return(
+function NotFoundComp( ) {
+    return (
         <motion.div
         initial="initial"  
         animate="in" exit="out"  
@@ -42,16 +38,12 @@ function NotFoundComp(props){
          >
             <div>
             <h2>
-           oopss!! seems resource not found at that address
-           
+                 Seems resource not found at that address, but nothing to worry about
             </h2>
-
             </div>
-           
             <p>
-                The link you entered or followed is either broken, removed or does not exist
-            </p>
-            
+               A good reason could be that The link you entered or followed is either broken, removed or does not exist
+            </p>             
         </motion.div>
     )
 }

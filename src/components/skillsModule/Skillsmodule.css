@@ -182,7 +182,7 @@
 .skills-mod{
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 3px #55759c;
+  box-shadow: 0 0 1.5px #55759c;
   min-height:20vh;
   width:60%;
   margin-bottom: 1%;
@@ -209,7 +209,7 @@
   display:flex;
   justify-content: center;
   background-color: var(--sidenav-bg-primary);
-  box-shadow: 0 0 2px #55759c;
+  box-shadow: 0 0 1.5px #55759c;
   border-radius: 4px;   
   margin:1%;
   width:35%;

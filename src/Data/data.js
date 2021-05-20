@@ -17,6 +17,8 @@ import {BiHome,BiUser,BiFolder} from "react-icons/bi";
 import {RiBookOpenLine,RiContactsBookLine,RiMailSendFill} from "react-icons/ri";
 import jeffweb1 from '../images/jeffweb1.jpg';
 import Humbes_portfolio from '../images/Humbe_Jeffreys_portfolio(1).png';
+import contact_me from '../images/contact-me.png';
+import about_me from '../images/about-me.png';
 // import quick_buy from '../images/quick_buy.png'
 
 
@@ -167,7 +169,12 @@ const data = {
     projectsData:[
         {
             imageSrc:Humbes_portfolio,
-            link:"/",          
+            link:"/", 
+            projImages:[
+                {imageSrc:Humbes_portfolio},
+                {imageSrc:Humbes_portfolio},
+                {imageSrc:Humbes_portfolio}
+            ],         
             projDetails : [
                 { item:"Application Name", content :"Quick buy" },
                 { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js` },
@@ -180,6 +187,11 @@ const data = {
         {
             imageSrc:jeffweb1,
             link:"/",
+            projImages:[
+                {imageSrc:Humbes_portfolio},
+                {imageSrc:Humbes_portfolio},
+                {imageSrc:Humbes_portfolio}
+            ],
             projDetails : [
                 { item:"Application Name", content :"Hospital Mangement System " },
                 { item:"Application Stack", content :`MongoDb, Express, Node.js, ` },
@@ -192,6 +204,11 @@ const data = {
         {
             imageSrc:Humbes_portfolio,
             link:"/",
+            projImages:[
+                {imageSrc:Humbes_portfolio},
+                {imageSrc: contact_me},
+                {imageSrc:about_me}
+            ],
             projDetails : [
                 { item:"Application Name", content :"Jeff's Portfolio" },
                 { item:"Application Stack", content :` React.js` },

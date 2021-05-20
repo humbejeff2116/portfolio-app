@@ -6,7 +6,11 @@ import { motion } from "framer-motion";
 import framerMotionSettings from '../FramerMotion/FramerSettings';
 import {Link} from 'react-router-dom';
 import {FaRegEye} from "react-icons/fa";
+import Carousel from '../carousel/Carousel'
+
+
 import './Projects.css';
+
 
 
 
@@ -35,10 +39,12 @@ function ProjectsHeader(props) {
     return (
        <>
        <div className="proj-container" >
-            <div className="proj-heading" >
-                    <h1>My Projects</h1>     
-            </div>
-            <div className="proj-panel" >     
+
+       <div className="proj-heading" >
+                <h1>My Projects</h1>     
+       </div>
+
+            <div className="proj-panel" >       
                 {
                     props.projectsData.map((data, i) =>
                         <Project key={i} {...data} /> 
@@ -55,30 +61,46 @@ function Project(props) {
     return (
         <div className="project-mod-intro">
             <div className="project-image">
-                <img
-                src={props.imageSrc}
-                alt="jeffs-project"
-                width="100%"
-                height="100%"
-                className={`smooth-image`}          
-                />
+            {/* <img
+            src={props.imageSrc}
+            alt="jeffs-project"
+            width="100%"
+            height="100%"
+            className={`smooth-image`}          
+        /> */}
+      
+
+            <Carousel projImages={props.projImages} />
+     
+
+   
+       
+
             </div>
-            <div className="projects-info">
-                { 
-                    props.projDetails.map((info, i) =>
-                    <ProjectBioCard key={i} {...info} />
-                    )   
-                }      
-            </div>
-            <div className="proj-bttn">
-                <Link to={props.link} className="contact-link" >
-                    <button className="pic-mod-intro-hire">
-                        <i> <FaRegEye className="contact-bttn-icon"/></i>
-                        View 
-                    </button>
-                </Link>
-            </div>
-        </div>       
+          
+      
+        <div className="projects-info">
+            { 
+
+                props.projDetails.map((info,i)=>
+                <ProjectBioCard key={i} {...info} />
+                )
+                
+            }      
+        </div>
+        <div className="proj-bttn">
+            <Link to={props.link} className="contact-link" >
+                <button className="pic-mod-intro-hire">
+                    <i> <FaRegEye className="contact-bttn-icon"/></i>
+                  View 
+                </button>
+               </Link>
+
+        </div>
+
+       
+        </div>
+             
     )
 }
 function ProjectBioCard(props) {
@@ -98,3 +120,6 @@ function ProjectBioCard(props) {
         </>
     )
 }
+
+
+

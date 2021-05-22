@@ -35,6 +35,7 @@
     margin:0;
     padding:0;
     position:fixed;
+    top:0;
     background-color: var(--sidenav-bg-primary);
     background-color: #1d2c3f;
     height:100vh;

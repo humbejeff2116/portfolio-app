@@ -214,10 +214,30 @@
   margin:1%;
   width:35%;
 }
+@media only screen and (max-width:966px){
+  .skills-mod{
+    width:70%;
+    margin-left:12%;
+  }
+
+}
+@media only screen and (max-width:700px){
+  .skills-mod{
+    width:70%;
+    margin-left:10%;
+  }
+  .skills-mod-hd{
+    width:70%;
+    margin-left:10%;
+  }
+
+}
 
 @media  only screen and (max-width:600px){
   .skills-mod{
     width:90%;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom: 5%;
   }
   .skills-mod-ittm p{ 

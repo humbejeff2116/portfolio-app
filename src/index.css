@@ -41,6 +41,12 @@ body {
   display:flex;
   flex-direction:row;
 }
+.pic-mod-no-right-contnr{
+  min-height: 100vh;
+   background-color: var(--sidenav-bg-primary);
+   display:flex;
+   flex-direction:row;
+}
 
 .pic-mod-left{
   display:flex;
@@ -318,38 +324,6 @@ opacity: 1;
 }
 
 /* W3, Opera 12+, Firefox 16+ */
-
-.arrow{
-  min-height: 20vh;
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  border-radius: 8px;
-  width:60%;
-  margin-left: auto;
-  margin-right: auto;
-  align-self:flex-end;
-  padding:0.6em;
-}
-
-.arrow p{
-  -webkit-animation: bounce 2s ease-out;
-  -moz-animation: bounce 800ms ease-out;
-  -o-animation: bounce 800ms ease-out;
-  animation: bounce 2s ease-out;   
-}
-
-.arrow i{
-  color:var(--prim-border-color);
-}
-
-.arrow-down{
-  width: 1.8em;
-  height:1.8em;
-  transform:rotate(90deg);
-}
-
 .nav-icon{
   width: 1.5em;
   height:1.5em;
@@ -358,6 +332,14 @@ opacity: 1;
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+@media only screen and (max-width:966px){
+  
+ .pic-mod-no-right{
+   min-height:100vh;
+ }
+
+
 }
 
 @media only screen and (max-width:600px){
@@ -379,9 +361,7 @@ code {
     height:1.4em;
   }
 
-  .arrow{
-    display:none;
-  }
+  
 
 }
 
@@ -395,9 +375,6 @@ code {
 
 @media only screen and (max-width:287px){
 
-  .arrow {
-    display:none;  
-  }
 
 }
 

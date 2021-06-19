@@ -49,7 +49,7 @@ const data = {
            
             imageSrc : jeffweb1,
             heading : "Hi, I am Humbe Jeffrey, a software developer",
-            body : `I am a, modern, software developer from Nigeria ${unicode} 
+            body : `I am a, modern, software developer from Nigeria ${unicode} . I am 
                    highly experienced in building scalable, high performing and secured applications` 
         }
     ],

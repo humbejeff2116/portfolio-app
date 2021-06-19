@@ -46,7 +46,6 @@ body {
   background-color: var(--sidenav-bg-primary);
   display:flex;
   flex-direction:row;
-  /* border:1px solid white; */
   margin-left:5.75rem;
 }
 
@@ -353,7 +352,7 @@ code {
   .pic-mod-no-right{
     min-height:75vh;
   }
-  
+
   .pic-mod-contnr{     
     margin-left:0; 
     min-height:40vh; 

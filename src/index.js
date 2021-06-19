@@ -8,7 +8,7 @@ import './index.css';
 
 
 ReactDOM.render(
-    <Router basename="/portfolio-app" >
+    <Router basename="/" >
       <App/>
     </Router>,
   document.getElementById('root')

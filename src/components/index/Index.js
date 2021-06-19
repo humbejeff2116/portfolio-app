@@ -20,7 +20,7 @@ export default function IndexComp(props) {
          className="anim-wrapper" 
          >            
             <>
-            <IndexPageTemplate top={ <PictureComp leftPane = {<IndexLeftPane/>}  /> } bottom={<  SkillsLeftPane /> } />
+            <IndexPageTemplate top={ <PictureComp leftPane = {<IndexLeftPane/>} /> } bottom={<  SkillsLeftPane /> } />
             </>
         </motion.div>        
     )

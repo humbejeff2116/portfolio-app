@@ -161,7 +161,8 @@
 .skills-mod-hd{
   display:flex;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
+  width:100%; 
 }
 
 .skills-mod-hd-title{
@@ -229,16 +230,19 @@
   .skills-mod-hd{
     width:70%;
     margin-left:10%;
+    margin-left:auto;
+    margin-right:auto;
   }
 
 }
 
 @media  only screen and (max-width:600px){
   .skills-mod{
-    width:90%;
+    width:92%;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 5%;
+   
   }
   .skills-mod-ittm p{ 
     color:var( --prim-color);      

@@ -4,7 +4,7 @@
     justify-content: center;
     min-height: 20vh;
     margin-left:5.75rem;
-    background-color: var(--sidenav-bg-primary);      
+    background-color: var(--sidenav-bg-primary);     
 }
 
 .footer-legal{
@@ -17,7 +17,6 @@
     width:80%;
     margin-right:auto;
     margin-left:auto; 
-    color: rgb(218, 152, 218); 
 }
 
 .footer-legal-list {
@@ -35,6 +34,7 @@
 
 .footer-social{
     display:none;
+    
 }
 
 .footer-social-nav{
@@ -83,8 +83,13 @@
     }
     .footer-social{         
         display:flex;
-        justify-content: center;
-        align-items: center; 
+        display:flex;
+        margin:1%;
+        flex-direction:row;
+        justify-content: center; 
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;  
     }
 
     .footer-legal{  

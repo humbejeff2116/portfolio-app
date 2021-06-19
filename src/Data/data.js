@@ -49,8 +49,8 @@ const data = {
            
             imageSrc : jeffweb1,
             heading : "Hi, I am Humbe Jeffrey, a software developer",
-            body : `I am a, modern, web and mobile application software developer, from ${unicode} 
-                    Nigeria. Highly experienced in building scalable, high performing and secured applications` 
+            body : `I am a, modern, software developer from Nigeria ${unicode} 
+                   highly experienced in building scalable, high performing and secured applications` 
         }
     ],
 

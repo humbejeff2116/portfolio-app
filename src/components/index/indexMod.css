@@ -205,7 +205,8 @@
 @media  only screen and (max-width:600px){
   .pic-mod-intro{
     width:84%;
-    margin-left: auto;  
+    margin-left: auto;
+    margin-top:5%;  
     
   }
    

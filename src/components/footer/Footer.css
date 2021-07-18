@@ -24,11 +24,13 @@
     justify-content: center;
     flex-wrap:wrap;
     padding:1%;    
-    width: 46%;   
+    width: 46%; 
+   
 }
 
 .footer-legal-list a{
-    color: var(--prim-border-color);
+    color:var( --prim-color);
+    text-shadow: 0 1.3px 1.3px black;  
     text-decoration: none;
 }
 

@@ -168,53 +168,92 @@ const data = {
     ],
     projectsData:[
         {
-            imageSrc:Humbes_portfolio,
-            link:"/", 
-            projImages:[
-                {imageSrc:Humbes_portfolio},
-                {imageSrc:Humbes_portfolio},
-                {imageSrc:Humbes_portfolio}
+            imageSrc: Humbes_portfolio,
+            link: "https://quickibuy.herokuapp.com", 
+            projImages: [
+                {imageSrc: Humbes_portfolio},
+                {imageSrc: Humbes_portfolio},
+                {imageSrc: Humbes_portfolio}
             ],         
-            projDetails : [
-                { item:"Application Name", content :"Quick buy" },
-                { item:"Application Stack", content :`MongoDb, Express, React.js, Node.js` },
-                { item:"Description", content:" A web based e-commerce clothing store application with secured user payment gateways " },
-                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/quickbuy-e-store"},
-               
+            projDetails: [
+                { 
+                    item: "Application Name", 
+                    content: "Quick buy" 
+                },
+                { 
+                    item: "Application Stack", 
+                    content: `MongoDb, Express, React.js, Node.js` 
+                },
+                { 
+                    item: "Description", 
+                    content:" A web based e-commerce clothing store with secured user payment gateway " 
+                },
+                { 
+                    item: "Github-Repo", 
+                    gitHubRepo:" https://github.com/humbejeff2116/quickbuy-e-store"
+                },              
             ]
     
         },
         {
-            imageSrc:jeffweb1,
-            link:"/",
-            projImages:[
+            imageSrc: jeffweb1,
+            link: "#",
+            projImages: [
                 {imageSrc:Humbes_portfolio},
                 {imageSrc:Humbes_portfolio},
                 {imageSrc:Humbes_portfolio}
             ],
-            projDetails : [
-                { item:"Application Name", content :"Hospital Mangement System " },
-                { item:"Application Stack", content :`MongoDb, Express, Node.js, ` },
-                { item:"Description", content:" A Hospital Management System backend Application Programming Interface" },
-                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/portfolio-app"},
+            projDetails: [
+                { 
+                    item: "Application Name", 
+                    content: "Sell out" 
+                },
+                { 
+                    item: "Application Stack", 
+                    content: `MongoDb, Express.js, React.js, Nodejs, Socket.io` 
+                },
+                { 
+                    item: "Description", 
+                    content: ` A real time digital market that gives users 
+                    a platform to buy and sell products/commodities`, 
+                },
+                { 
+                    item: "Github-Repo", 
+                    gitHubRepo: " https://github.com/humbejeff2116/sell-out-frontend",
+                },
+                { 
+                    item: "Github-Repo", 
+                    gitHubRepo: " https://github.com/humbejeff2116/sell-out-backend"
+                },
                
             ]
     
         },
         {
-            imageSrc:Humbes_portfolio,
-            link:"/",
-            projImages:[
-                {imageSrc:Humbes_portfolio},
+            imageSrc: Humbes_portfolio,
+            link: "/",
+            projImages: [
+                {imageSrc: Humbes_portfolio},
                 {imageSrc: contact_me},
-                {imageSrc:about_me}
+                {imageSrc: about_me}
             ],
-            projDetails : [
-                { item:"Application Name", content :"Jeff's Portfolio" },
-                { item:"Application Stack", content :` React.js` },
-                { item:"Description", content:" My personal portfolio web application" },
-                { item:"Github-Repo", gitHubRepo:" https://github.com/humbejeff2116/portfolio-app"},
-               
+            projDetails: [
+                { 
+                    item: "Application Name", 
+                    content: "Jeff's Portfolio" 
+                },
+                { 
+                    item: "Application Stack", 
+                    content: ` React.js` 
+                },
+                { 
+                    item: "Description", 
+                    content: " My personal portfolio web application" 
+                },
+                { 
+                    item: "Github-Repo", 
+                    gitHubRepo: " https://github.com/humbejeff2116/portfolio-app"
+                },  
             ]
     
         }

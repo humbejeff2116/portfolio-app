@@ -18,8 +18,11 @@
   flex-direction: column;
   margin-left: 8.5%;
 }
+.index-content h1{
+  text-shadow: 0 1.3px 1.3px black; 
+}
 
-.pic-mod-intro p{
+.index-content p{
   font-size:1.1em;
   font-family: apple color emoji,
   segoe ui emoji, noto color emoji,
@@ -27,6 +30,7 @@
   emojione mozilla,
   twemoji mozilla,
   segoe ui symbol;
+  text-shadow: 0 1px 1px black;
 }
 
 .index-info{

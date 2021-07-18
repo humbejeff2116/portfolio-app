@@ -22,7 +22,7 @@ export default function ContactComp(props) {
             <PagesTemplate 
             top={ <PictureComp leftPane={ <ContactHeader  contactItems={props.contactItems} /> } /> }
             />
-        </motion.div>    
+        </motion.div>      
     )
 }
 
@@ -59,7 +59,7 @@ function ContactCard(props) {
         <div className={`contact-bio `}>   
             <p className="about-tg">
                 <i> {props.contactIcon} </i>
-                <span>{ props.contactType +" :"}  </span>    
+                <span> { props.contactType +" :"} </span>    
                 <span className="contact-item"> { props.contactItem } </span>  
             </p> 
         </div>       
@@ -73,6 +73,7 @@ class ContactForm extends React.Component {
             email: '',
             subject: '',
             message: '',
+            errorMessage:'',
             sentMessage: false,
             sendingMessage: false,
             mssgErr: false, 
@@ -86,6 +87,12 @@ class ContactForm extends React.Component {
         const  templateId = process.env.REACT_APP_TEMPLATE_ID;
         const serviceId = process.env.REACT_APP_SERVICE_ID; 
         e.preventDefault();
+        if (!this.state.name || !this.state.email || !this.state.subject || !this.state.message) {
+            return  this.setState({
+                errorMessage:"Please fill out all form fields",
+                sendingMessage: false
+            });
+        }
         emailjs.sendForm(serviceId, templateId, e.target, userId)
         .then(result => {     
             this.setState({
@@ -158,6 +165,9 @@ class ContactForm extends React.Component {
                     </Modal> 
                 )
             }
+            <div className="contact-form-error">
+                <span>{this.state.errorMessage || ''}</span>
+            </div>
             <form onSubmit={this.sendEmail}  autoComplete="off" >
                 <div className="contact-form-group">
                     <label>

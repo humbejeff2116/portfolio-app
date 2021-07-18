@@ -69,6 +69,14 @@
 .projects-info a{
   color: var(--prim-color)
 }
+.project-info-item{
+  text-shadow: 0 1px 1px black;
+
+}
+.project-info-content{
+  text-shadow: 0 1px 1px black;
+
+}
 .project-social{
   width:10%;
   display:flex;

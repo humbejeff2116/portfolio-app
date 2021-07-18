@@ -223,7 +223,7 @@ const data = {
                 },
                 { 
                     item: "Github-Repo", 
-                    gitHubRepo: " https://github.com/humbejeff2116/sell-out-backend"
+                    gitHubRepo: " https://github.com/humbejeff2116/sell-out-backend",
                 },
                
             ]

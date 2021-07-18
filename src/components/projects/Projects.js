@@ -7,12 +7,7 @@ import framerMotionSettings from '../FramerMotion/FramerSettings';
 import {Link} from 'react-router-dom';
 import {FaRegEye} from "react-icons/fa";
 import Carousel from '../carousel/Carousel'
-
-
 import './Projects.css';
-
-
-
 
 
 export default function ProjectComp(props) {
@@ -61,46 +56,24 @@ function Project(props) {
     return (
         <div className="project-mod-intro">
             <div className="project-image">
-            {/* <img
-            src={props.imageSrc}
-            alt="jeffs-project"
-            width="100%"
-            height="100%"
-            className={`smooth-image`}          
-        /> */}
-      
-
             <Carousel projImages={props.projImages} />
-     
-
-   
-       
-
             </div>
-          
-      
         <div className="projects-info">
             { 
-
                 props.projDetails.map((info,i)=>
                 <ProjectBioCard key={i} {...info} />
-                )
-                
+                )    
             }      
         </div>
         <div className="proj-bttn">
             <Link to={props.link} className="contact-link" >
-                <button className="pic-mod-intro-hire">
-                    <i> <FaRegEye className="contact-bttn-icon"/></i>
-                  View 
-                </button>
-               </Link>
-
+            <button className="pic-mod-intro-hire">
+                <i> <FaRegEye className="contact-bttn-icon"/></i>
+                View Live
+            </button>
+            </Link>
         </div>
-
-       
-        </div>
-             
+        </div>  
     )
 }
 function ProjectBioCard(props) {
@@ -109,17 +82,14 @@ function ProjectBioCard(props) {
         {
             (props.gitHubRepo) ? 
             <>
-                <span> <b>{props.item} </b> </span>  
-                <span> <a rel="noreferrer" target="_blank" href={props.gitHubRepo}> view code </a> </span>< br /> 
+                <span className="project-info-item"> <b>{props.item} </b> </span>  
+                <span className="project-info-content"> <a rel="noreferrer" target="_blank" href={props.gitHubRepo}> View Source Code </a> </span>< br /> 
             </> : 
             <>
-                <span className="about-tg" > <b>{props.item} </b> </span> 
-                <span className="about-ts" > {props.content} </span>
+                <span className="project-info-item" > <b>{props.item} </b> </span> 
+                <span className="project-info-content" > {props.content} </span>
             </>
         }
         </>
     )
 }
-
-
-

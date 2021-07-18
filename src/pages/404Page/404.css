@@ -10,6 +10,7 @@
   margin-right: auto;
   align-self: center;
   background-color: #1d2c3f;
+  text-shadow: 0 1px 1px black;
 }
 
 @media only screen and (max-width:600px){

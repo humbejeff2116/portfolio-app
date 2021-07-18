@@ -22,6 +22,7 @@
 
 .about-heading h1{
 text-align:center;
+text-shadow: 0 1.3px 1.3px black;
 }
 
 .about-heading p{
@@ -49,7 +50,8 @@ text-align:center;
 .about-bio{  
   margin-top:3%;
   padding:0.4em;
-  border-radius: 4px; 
+  border-radius: 4px;
+  text-shadow: 0 1px 1px black; 
 }
 
 .about-info{
@@ -66,7 +68,8 @@ text-align:center;
   color: var(--prim-border-color);
 }
 .about-info p{
-  color:var(--prim-border-color);
+  color:var(--prim-color);
+  text-shadow: 0 1px 1px black;
 }
 .about-social{
   width:10%;
